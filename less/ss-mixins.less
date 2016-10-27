@@ -7,7 +7,7 @@
     border-radius: @border-radius;
 }
 
-.ss-color-block(@width: 0.25em, @color: @ss-color-tan) {
+.ss-color-block(@color: @ss-color-tan; @width: 0.25em) {
     &.ss-color-block {
         &:before {
             content: '\00a0';
@@ -19,7 +19,7 @@
         }
         &-background {
             padding: @ss-padding-vertical-base @ss-padding-horizontal-base;
-            background: @ss-color-tan;
+            background: @color;
         }
     }
 }

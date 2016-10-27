@@ -168,12 +168,16 @@ h6 {
 h1 { 
     font-size: @ss-font-size-h1;
     font-weight: 600;
-    .ss-color-block();
+    &.tan   { .ss-color-block(@ss-color-tan);   }
+    &.red   { .ss-color-block(@ss-color-red);   }
+    &.green { .ss-color-block(@ss-color-green); }
 }
 
 h2 {
     font-weight: 400;
-    .ss-color-block();
+    &.tan   { .ss-color-block(@ss-color-tan);   }
+    &.red   { .ss-color-block(@ss-color-red);   }
+    &.green { .ss-color-block(@ss-color-green); }
 }
 
 p {

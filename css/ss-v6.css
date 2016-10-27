@@ -173,10 +173,22 @@ h1.red.ss-color-block-background {
   padding: 14px 20px;
   background: #f05440;
 }
+h1.green.ss-color-block:before {
+  content: '\00a0';
+  width: 0.25em;
+  height: 1.42857143;
+  margin-right: 0.25em;
+  display: inline-block;
+  background: #33a86a;
+}
+h1.green.ss-color-block-background {
+  padding: 14px 20px;
+  background: #33a86a;
+}
 h2 {
   font-weight: 400;
 }
-h2.ss-color-block:before {
+h2.tan.ss-color-block:before {
   content: '\00a0';
   width: 0.25em;
   height: 1.42857143;
@@ -184,9 +196,33 @@ h2.ss-color-block:before {
   display: inline-block;
   background: #ebe7dc;
 }
-h2.ss-color-block-background {
+h2.tan.ss-color-block-background {
   padding: 14px 20px;
   background: #ebe7dc;
+}
+h2.red.ss-color-block:before {
+  content: '\00a0';
+  width: 0.25em;
+  height: 1.42857143;
+  margin-right: 0.25em;
+  display: inline-block;
+  background: #f05440;
+}
+h2.red.ss-color-block-background {
+  padding: 14px 20px;
+  background: #f05440;
+}
+h2.green.ss-color-block:before {
+  content: '\00a0';
+  width: 0.25em;
+  height: 1.42857143;
+  margin-right: 0.25em;
+  display: inline-block;
+  background: #33a86a;
+}
+h2.green.ss-color-block-background {
+  padding: 14px 20px;
+  background: #33a86a;
 }
 p.large {
   font-size: 18px;
