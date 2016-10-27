@@ -1,0 +1,25 @@
+// #MIXINS
+
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+    padding: @padding-vertical @padding-horizontal;
+    font-size: @font-size;
+    line-height: @line-height;
+    border-radius: @border-radius;
+}
+
+.ss-color-block(@width: 0.25em, @color: @ss-color-tan) {
+    &.ss-color-block {
+        &:before {
+            content: '\00a0';
+            width: @width;
+            height: @ss-line-height-base;
+            margin-right: 0.25em;
+            display: inline-block;
+            background: @color;
+        }
+        &-background {
+            padding: @ss-padding-vertical-base @ss-padding-horizontal-base;
+            background: @ss-color-tan;
+        }
+    }
+}

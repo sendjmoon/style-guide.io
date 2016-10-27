@@ -1,0 +1,334 @@
+/*
+
+SecondSTEP Styles v6
+
+*/
+
+@import "ss-variables.less";
+@import "ss-mixins.less";
+
+/* 
+
+    #UNSORTED 
+
+*/
+
+.ss-sidenav-sticky {
+
+}
+
+pre {
+    label {
+        display: block;
+        position: absolute;
+        top: @ss-font-size-base;
+        background: @ss-color-silver;
+        padding: 4px;
+        border: 1px solid @ss-color-light-grey;
+    }
+    display: block;
+    padding: (@ss-padding-vertical-base * 2);
+    margin: (@ss-padding-vertical-base * 2) 0;
+    font-size: (@ss-font-size-base * .75);
+    line-height: (@ss-line-height-base * .75);
+    white-space: pre;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: @ss-color-dark-grey;
+    background: none;
+    border: 1px solid @ss-color-light-grey;
+    border-radius: 0;
+    code {
+        padding: 0;
+        font-size: inherit;
+        color: inherit;
+        white-space: pre-wrap;
+        background-color: transparent;
+        border-radius: 0;
+    }
+    .class {
+        color: @ss-color-red;
+    }
+    .tag {
+        color: @ss-color-green;
+    }
+}
+
+/*
+
+    #GLOBAL
+
+*/
+
+body {
+    font-family: @ss-font-family-sans-serif;
+    color: #000;
+}
+
+a {
+    color: @ss-color-blue;
+    &:hover {
+        color: @ss-color-dark-grey;
+    }
+    &.current {
+        color: @ss-color-light-grey;
+    }
+}
+
+hr {
+    margin-top: (@line-height-computed * 2);
+    margin-bottom: (@line-height-computed * 2);
+    border: 0;
+    border-top: 1px solid @ss-color-light-grey;
+    position: relative;
+    clear: both;
+    &.thick {
+        border-top: 4px solid @ss-color-light-grey;
+        margin-top: (@line-height-computed * 3);
+        margin-bottom: (@line-height-computed * 3);
+    }
+    &.double {
+        margin: (@line-height-computed * 3) 0;
+        &:after {
+            content: '';
+            width: 100%;
+            border: 0;
+            border-top: 1px solid @ss-color-light-grey;
+            position: absolute;
+            top: 5px;
+        }
+    }
+    &.white {
+        border-color: #fff;
+    }
+}
+
+img {
+    &.ss-thumbnail-left {
+        margin-right: @ss-padding-horizontal-base;
+    }
+}
+
+.top-bar {
+    padding: (@ss-padding-vertical-base * 2) 0;
+}
+
+/*
+
+    #BUTTONS
+
+*/
+
+.ss-btn {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: normal;
+    text-align: center;
+    font-size: @ss-font-size-base;
+    line-height: @ss-line-height-base;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition: background 500ms;
+    padding: @ss-padding-vertical-base @ss-padding-horizontal-base;
+    border-radius: 0;
+    color: @ss-color-white;
+    background: @ss-color-blue;
+    &:hover {
+        color: @ss-color-white;
+        background: lighten(@ss-color-blue, 12%);
+        border: 1px solid transparent;
+    }
+    &.block {
+        display: block;
+        width: 100%;
+    }
+}
+
+/*
+
+    #TYPOGRAPHY
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @ss-color-dark-grey;
+    margin-top: (@line-height-computed * 1.5);
+    margin-bottom: (@line-height-computed / 2);
+}
+
+h1 { 
+    font-size: @ss-font-size-h1;
+    font-weight: 600;
+    .ss-color-block();
+}
+
+h2 {
+    font-weight: 400;
+    .ss-color-block();
+}
+
+p {
+    &.large {
+        font-size: 18px;
+        font-weight: 300;        
+    }
+}
+
+/*
+
+    #LISTS
+    #LINK LISTS
+
+*/
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    li {
+        margin: 0;
+        line-height: 1.25em;
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 0; 
+        }
+        a {
+            padding: 0.66em 0 0.66em 0;
+            display: block;
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                display: block;
+                margin: 0;
+            }
+            small {
+                display: block;
+                margin: 0;
+            }
+        }//a
+    }//li
+    &.ss-border {
+        li {
+            line-height: 1.25em;
+            border-bottom: 1px solid @ss-color-blue;
+            h1, h2, h3, h4, h5, h6 {
+                padding: 0 0 0 2%; 
+            }
+            a {
+                padding: 1em 0 1em 2%;
+                display: block;
+            }//a
+        }//li
+    }//ss-border
+    &.ss-nav-horizontal {
+        background: @ss-color-tan;
+        margin: 0;
+        li {
+            display: inline-block;
+            margin: 0;
+            h1 {
+                font-size: @ss-font-size-base;
+                font-weight: 700;
+                margin: 0 @ss-padding-horizontal-base;
+            }
+            a {
+                padding-top: @ss-padding-vertical-base;
+                padding-bottom: @ss-padding-vertical-base;
+                padding-left: @ss-padding-horizontal-base;
+                padding-right: @ss-padding-horizontal-base;
+                transition: background 500ms;
+                &:hover {
+                    text-decoration: none;
+                    background: darken(@ss-color-tan, 12%);
+                }
+            }
+        }
+    }
+}//ul
+
+
+/*
+
+    #HELPERS
+
+*/
+
+.ss-margin-vertical {
+    &-none {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    &-xs {
+        margin-top: 1px !important;
+        margin-bottom: 1px !important;
+    }
+    &-sm {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    &-md {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    &-lg {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    &-xl {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+.ss-padding-vertical {
+    &-none {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    &-xs {
+        padding-top: 1px !important;
+        padding-bottom: 1px !important;
+    }
+    &-sm {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    &-md {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    &-lg {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    &-xl {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
