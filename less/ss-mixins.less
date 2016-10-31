@@ -9,12 +9,16 @@
 
 .ss-color-block(@color: @ss-color-tan; @width: 0.25em) {
     &.ss-color-block {
+        padding-left: (@width * 2);
         &:before {
             content: '\00a0';
             width: @width;
-            height: @ss-line-height-base;
+            height: 100%;
             margin-right: 0.25em;
-            display: inline-block;
+            display: block;
+            float: left;
+            position: absolute;
+            left: 0;
             background: @color;
         }
         &-background {
@@ -22,4 +26,40 @@
             background: @color;
         }
     }
+}
+
+.ss-button-colors() {
+    &.white { background-color: #fff; border-color: #fff; }
+    &.red   { 
+        background-color: @ss-color-red; 
+        border-color: @ss-color-red; 
+        &:hover { 
+            background-color: lighten(@ss-color-red, 12%); 
+            border-color: lighten(@ss-color-red, 12%);
+        }
+    }
+    &.green   { 
+        background-color: @ss-color-green; 
+        border-color: @ss-color-green; 
+        &:hover { 
+            background-color: lighten(@ss-color-green, 12%); 
+            border-color: lighten(@ss-color-green, 12%);
+        }
+    }
+    &.blue   { 
+        background-color: @ss-color-blue; 
+        border-color: @ss-color-blue; 
+        &:hover { 
+            background-color: lighten(@ss-color-blue, 12%); 
+            border-color: lighten(@ss-color-blue, 12%);
+        }
+    }
+}
+
+.ss-background-colors() {
+    &.white { background-color: #fff; }
+    &.red   { background-color: @ss-color-red; }
+    &.green { background-color: @ss-color-green; }
+    &.blue { background-color: @ss-color-blue; }
+    &.tan { background-color:  @ss-color-tan; }
 }
