@@ -1,5 +1,43 @@
 // #MIXINS
 
+// #PADDING/MARGIN
+
+.ss-padding-matrix(@pad) {
+    padding: @pad !important;
+    &-all { padding: @pad !important; } 
+    &-h {
+        padding-left: @pad !important;
+        padding-right: @pad !important;
+    }
+    &-v {
+        padding-top: @pad !important;
+        padding-bottom: @pad !important;   
+    }
+    &-left { padding-left: @pad !important; }
+    &-right { padding-right: @pad !important; }
+    &-top { padding-top: @pad !important; }
+    &-bottom { padding-bottom: @pad !important; }
+}
+
+.ss-margin-matrix(@mar) {
+    margin: @mar !important;
+    &-all { margin: @mar !important; } 
+    &-h {
+        margin-left: @mar !important;
+        margin-right: @mar !important;
+    }
+    &-v {
+        margin-top: @mar !important;
+        margin-bottom: @mar !important;   
+    }
+    &-left { margin-left: @mar !important; }
+    &-right { margin-right: @mar !important; }
+    &-top { margin-top: @mar !important; }
+    &-bottom { margin-bottom: @mar !important; }
+}
+
+// #BUTTONS
+
 .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
     padding: @padding-vertical @padding-horizontal;
     font-size: @font-size;
@@ -63,3 +101,10 @@
     &.blue { background-color: @ss-color-blue; }
     &.tan { background-color:  @ss-color-tan; }
 }
+
+
+
+
+
+
+
