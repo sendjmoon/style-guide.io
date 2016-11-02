@@ -168,6 +168,18 @@ code {
     }
 }//ss-sample-container
 
+.ss-sample-row {
+    background: rgba(240, 84, 64, 0.25);
+    .ss-sample-col {
+        background: rgba(240, 84, 64, 0.25);
+        outline: 1px solid #fff;
+        label, span {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
+
 .ss-sample-grid {
     div {   
         outline: 1px solid #fcddd9;
@@ -581,12 +593,6 @@ ul {
         &:first-child {
             list-style: none;
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 200;
-            padding: 0; 
-        }
         a {
             font-size: 16px;
             padding: 0.5em 0;
@@ -605,6 +611,16 @@ ul {
             }
         }//a
     }//li
+    &.ss-nav-list {
+        li {
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 200;
+                padding: 0; 
+            }
+        }
+    }//ss-nav-list
     &.ss-border {
         li {
             line-height: 1.25em;

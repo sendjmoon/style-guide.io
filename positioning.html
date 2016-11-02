@@ -30,7 +30,7 @@
 <div class="container">
     <div class="row">
         <div id="left-side" class="col-sm-12 col-md-3">
-            <ul>
+            <ul class="ss-nav-list">
                 <li><h1 class="ss-margin-vertical-none-top"><div class="ss-icon"><img src="imgs/cube.png" width="20px" /></div>Styles</h1></li>
                 <li>
                     <a href="/style-guide.io/">
@@ -67,7 +67,7 @@
                     </a>
                 </li>
             </ul>
-            <ul>
+            <ul class="ss-nav-list">
                 <li><h1><div class="ss-icon"><img src="imgs/page.png" /></div>Samples</h1></li>
                 <li>
                     <a href="sample-pages/landing-page.html">
@@ -121,39 +121,114 @@
                     <h2 class="tan ss-color-block">The Grid</h2>
 
                     <p>
-                        SS follows the default Bootstrap grid:<br />
+                        SS follows the default Bootstrap grid of 
                         <code>.row</code> and
                         <code>.col-<span>size</span>-<span>columns</span></code>
+                        and <code>.col-<span>size</span>-offset-<span>columns</span></code>. Where no set of columns within a row exceeds 12.
                     </p>
+                    <p>
+                        Nested rows + columns are sized based on parent container size.
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <label>12-column within 12-column</label>
+                                    <div class="row ss-sample-row">
+                                        <div class="col-sm-12 ss-sample-col">
+                                            <span><code>.col-sm-12</code></span>
+                                            <br />
+                                            <div class="row ss-sample-row">
+                                                <div class="col-sm-12 ss-sample-col">
+                                                    <span><code>.col-sm-12</code></span>
+                                                </div>
+                                            </div><!-- /.row -->
+                                        </div>
+                                    </div><!-- /.row -->
+                                </div>
+                            </div><!-- /.row -->
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <label>Two 6-column within 12-column</label>
+                                    <div class="row ss-sample-row">
+                                        <div class="col-sm-12 ss-sample-col">
+                                            <span><code>.col-sm-12</code></span>
+                                            <div class="row ss-sample-row">
+                                                <div class="col-sm-6 ss-sample-col">
+                                                    <span><code>.col-sm-6</code></span>
+                                                </div>
+                                                <div class="col-sm-6 ss-sample-col">
+                                                    <span><code>.col-sm-6</code></span>
+                                                </div>
+                                            </div><!-- /.row -->
+                                        </div>
+                                    </div><!-- /.row -->
+                                </div>
+                            </div><!-- /.row -->
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <label>Two 6-column within 6-column within 12-column</label>
+                                    <div class="row ss-sample-row">
+                                        <div class="col-sm-12 ss-sample-col">
+                                            <span><code>.col-sm-12</code></span>
+                                            <br />
+                                            <div class="row ss-sample-row">
+                                                <div class="col-sm-6 col-sm-offset-3 ss-sample-col">
+                                                    <span><code>.col-sm-6 .col-sm-offset-3</code></span>
+                                                    <div class="row ss-sample-row">
+                                                        <div class="col-sm-6 ss-sample-col">
+                                                            <span><code>.col-sm-6</code></span>
+                                                        </div>
+                                                        <div class="col-sm-6 ss-sample-col">
+                                                            <span><code>.col-sm-6</code></span>
+                                                        </div>
+                                                    </div><!-- /.row -->
+                                                </div>
+
+                                            </div><!-- /.row -->
+                                        </div>
+                                    </div><!-- /.row -->
+                                </div>
+                            </div><!-- /.row -->
+                        </li>
+                    </ul>
 
                     <div class="table-responsive"> <table class="table table-bordered table-striped"> <thead> <tr> <th></th> <th> Extra small devices <small>Phones (&lt;768px)</small> </th> <th> Small devices <small>Tablets (≥768px)</small> </th> <th> Medium devices <small>Desktops (≥992px)</small> </th> <th> Large devices <small>Desktops (≥1200px)</small> </th> </tr> </thead> <tbody> <tr> <th class="text-nowrap" scope="row">Grid behavior</th> <td>Horizontal at all times</td> <td colspan="3">Collapsed to start, horizontal above breakpoints</td> </tr> <tr> <th class="text-nowrap" scope="row">Container width</th> <td>None (auto)</td> <td>750px</td> <td>970px</td> <td>1170px</td> </tr> <tr> <th class="text-nowrap" scope="row">Class prefix</th> <td><code>.col-xs-</code></td> <td><code>.col-sm-</code></td> <td><code>.col-md-</code></td> <td><code>.col-lg-</code></td> </tr> <tr> <th class="text-nowrap" scope="row"># of columns</th> <td colspan="4">12</td> </tr> <tr> <th class="text-nowrap" scope="row">Column width</th> <td class="text-muted">Auto</td> <td>~62px</td> <td>~81px</td> <td>~97px</td> </tr> <tr> <th class="text-nowrap" scope="row">Gutter width</th> <td colspan="4">30px (15px on each side of a column)</td> </tr> <tr> <th class="text-nowrap" scope="row">Nestable</th> <td colspan="4">Yes</td> </tr> <tr> <th class="text-nowrap" scope="row">Offsets</th> <td colspan="4">Yes</td> </tr> <tr> <th class="text-nowrap" scope="row">Column ordering</th> <td colspan="4">Yes</td> </tr> </tbody> </table> </div>
 
-                    <div class="ss-sample-grid">
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
-                        <div class="col-md-1">.col-md-1</div>
+                    <p>
+                        Columns with no <code>sm</code> delared collapse to 12-columns on mobile by default.
+                    </p>
+
+                    <div class="ss-sample-row">
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
+                        <div class="col-md-1 ss-sample-col"><span><code>.col-md-1</code></span></div>
                     </div>
-                    <div class="ss-sample-grid">
-                        <div class="col-md-8">.col-md-8</div>
-                        <div class="col-md-4">.col-md-4</div>
+                    <div class="ss-sample-row">
+                        <div class="col-md-8 ss-sample-col"><span><code>.col-md-8</code></span></div>
+                        <div class="col-md-4 ss-sample-col"><span><code>.col-md-4</code></span></div>
                     </div>
-                    <div class="ss-sample-grid">
-                        <div class="col-md-4">.col-md-4</div>
-                        <div class="col-md-4">.col-md-4</div>
-                        <div class="col-md-4">.col-md-4</div>
+                    <div class="ss-sample-row">
+                        <div class="col-md-4 ss-sample-col"><span><code>.col-md-4</code></span></div>
+                        <div class="col-md-4 ss-sample-col"><span><code>.col-md-4</code></span></div>
+                        <div class="col-md-4 ss-sample-col"><span><code>.col-md-4</code></span></div>
                     </div>
-                    <div class="ss-sample-grid">
-                        <div class="col-md-6">.col-md-6</div>
-                        <div class="col-md-6">.col-md-6</div>
+                    <div class="ss-sample-row">
+                        <div class="col-md-6 ss-sample-col"><span><code>.col-md-6</code></span></div>
+                        <div class="col-md-6 ss-sample-col"><span><code>.col-md-6</code></span></div>
                     </div>
 
                     <div class="row">
@@ -169,6 +244,11 @@
 <code><em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
     <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-12 col-md-6 col-lg-4</em><em class="attr">"</em><em class="tag">></em>
         Content
+        <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
+            <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
+                Nested Content
+            <em class="tag">&lt;/div&gt;</em>
+        <em class="tag">&lt;/div&gt;</em>
         <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
             <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
                 Nested Content
