@@ -19,61 +19,9 @@
   font-weight: normal;
 }
 
-.ss-font-proxima-nova{
-  font-family: @ss-font-proxima-nova;
-}
-
-.ss-font-proxima-nova-semibold{
-  font-weight: 600;
-}
-
-.ss-font-muli{
-  font-family: @ss-font-muli;
-}
-
-.ss-color-grade-early-learning{
-  color: @ss-color-grade-early-learning;
-}
-
-.ss-color-grade-kindergarten{
-  color: @ss-color-grade-kindergarten;
-}
-
-.ss-color-grade-1{
-  color: @ss-color-grade-1;
-}
-
-.ss-color-grade-2{
-  color: @ss-color-grade-2;
-}
-
-.ss-color-grade-3{
-  color: @ss-color-grade-3;
-}
-
-.ss-color-grade-4{
-  color: @ss-color-grade-4;
-}
-
-.ss-color-grade-5{
-  color: @ss-color-grade-5;
-}
-
-.ss-color-grade-6{
-  color: @ss-color-grade-6;
-}
-
-.ss-color-grade-7{
-  color: @ss-color-grade-7;
-}
-
-.ss-color-grade-8{
-  color: @ss-color-grade-8;
-}
-
 // #PADDING/MARGIN
 
-.ss-padding-matrix(@pad) {
+.ssp-padding-matrix(@pad) {
     padding: @pad !important;
     &-all { padding: @pad !important; }
     &-h {
@@ -90,7 +38,7 @@
     &-bottom { padding-bottom: @pad !important; }
 }
 
-.ss-margin-matrix(@mar) {
+.ssp-margin-matrix(@mar) {
     margin: @mar !important;
     &-all { margin: @mar !important; }
     &-h {
@@ -116,8 +64,8 @@
     border-radius: @border-radius;
 }
 
-.ss-color-block(@color: @ss-color-tan; @width: 0.25em) {
-    &.ss-color-block {
+.ssp-color-block(@color: @ssp-color-tan; @width: 0.25em) {
+    &.ssp-color-block {
         padding-left: (@width * 2);
         &:before {
             content: '\00a0';
@@ -131,44 +79,44 @@
             background: @color;
         }
         &-background {
-            padding: @ss-padding-vertical-base @ss-padding-horizontal-base;
+            padding: @ssp-padding-vertical-base @ssp-padding-horizontal-base;
             background: @color;
         }
     }
 }
 
-.ss-button-colors() {
+.ssp-button-colors() {
     &.white { background-color: #fff; border-color: #fff; }
     &.red   {
-        background-color: @ss-color-red;
-        border-color: @ss-color-red;
+        background-color: @ssp-color-red;
+        border-color: @ssp-color-red;
         &:hover {
-            background-color: lighten(@ss-color-red, 12%);
-            border-color: lighten(@ss-color-red, 12%);
+            background-color: lighten(@ssp-color-red, 12%);
+            border-color: lighten(@ssp-color-red, 12%);
         }
     }
     &.green   {
-        background-color: @ss-color-green;
-        border-color: @ss-color-green;
+        background-color: @ssp-color-green;
+        border-color: @ssp-color-green;
         &:hover {
-            background-color: lighten(@ss-color-green, 12%);
-            border-color: lighten(@ss-color-green, 12%);
+            background-color: lighten(@ssp-color-green, 12%);
+            border-color: lighten(@ssp-color-green, 12%);
         }
     }
     &.blue   {
-        background-color: @ss-color-blue;
-        border-color: @ss-color-blue;
+        background-color: @ssp-color-blue;
+        border-color: @ssp-color-blue;
         &:hover {
-            background-color: lighten(@ss-color-blue, 12%);
-            border-color: lighten(@ss-color-blue, 12%);
+            background-color: lighten(@ssp-color-blue, 12%);
+            border-color: lighten(@ssp-color-blue, 12%);
         }
     }
 }
 
-.ss-background-colors() {
+.ssp-background-colors() {
     &.white { background-color: #fff; }
-    &.red   { background-color: @ss-color-red; }
-    &.green { background-color: @ss-color-green; }
-    &.blue { background-color: @ss-color-blue; }
-    &.tan { background-color:  @ss-color-tan; }
+    &.red   { background-color: @ssp-color-red; }
+    &.green { background-color: @ssp-color-green; }
+    &.blue { background-color: @ssp-color-blue; }
+    &.tan { background-color:  @ssp-color-tan; }
 }
