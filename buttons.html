@@ -7,7 +7,7 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>SecondSTEP Style Guide v6.0</title>
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/ss-v6.css" rel="stylesheet">
+<link href="css/ssp-v6.css" rel="stylesheet">
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -30,10 +30,10 @@
 <div class="container">
     <div class="row">
         <div id="left-side" class="col-sm-12 col-md-3">
-            <ul class="ss-nav-list">
-                <li><h1 class="ss-margin-vertical-none-top"><div class="ss-icon"><img src="imgs/cube.png" width="20px" /></div>Styles</h1></li>
+            <ul class="ssp-nav-list">
+                <li><h1 class="ssp-margin-vertical-none-top"><div class="ssp-icon"><img src="imgs/cube.png" width="20px" /></div>Styles</h1></li>
                 <li>
-                    <a href="/style-guide.io/">
+                    <a href="index.html">
                         Introduction
                     </a>
                 </li>
@@ -44,8 +44,15 @@
                     </a>
                 </li>
                 <li>
+                  <a href="logos.html">
+                              Logos
+                              <small><em>Second Step</em></small>
+                          </a>
+                </li>
+                <li>
                     <a href="colors.html">
                         Colors
+                        <small>grade-level, program, unit</small>
                     </a>
                 </li>
                 <li>
@@ -67,16 +74,16 @@
                     </a>
                 </li>
             </ul>
-            <ul class="ss-nav-list">
-                <li><h1><div class="ss-icon"><img src="imgs/page.png" /></div>Samples</h1></li>
+            <ul class="ssp-nav-list">
+                <li><h1><div class="ssp-icon"><img src="imgs/page.png" /></div>Samples</h1></li>
                 <li>
-                    <a href="sample-pages/landing-page.html">
+                    <a href="../sample-pages/landing-page.html">
                         Landing Page
                     </a>
                 </li>
                 <li>
-                    <a href="sample-pages/kit-page.html">
-                        Kit Page
+                    <a href="../sample-pages/tan-sidebar.html">
+                        Tan Sidebar
                     </a>
                 </li>
                 <li>
@@ -90,9 +97,9 @@
                     </a>
                 </li>
             </ul>
-            <div class="row col-md-2 ss-sidenav-sticky" data-spy="affix">
+            <!-- <div class="row col-md-2 ssp-sidenav-sticky" data-spy="affix">
                 <div class="btn-group">
-                <button type="button" class="ss-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="ssp-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Jump To Page <span class="caret"></span>
                 </button>
                     <ul class="dropdown-menu">
@@ -105,63 +112,64 @@
                         <li><a href="javascript:void(0);">Sample Pages</a></li>
                     </ul>
                 </div>
-            </div><!-- /.ss-sidenav-sticky -->
+            </div> -->
+            <!-- /.ssp-sidenav-sticky -->
         </div><!-- /#left-side -->
 
         <div class="col-sm-12 col-md-9">
 
-            <div class="row ss-section">
+            <div class="row ssp-section">
                 <div class="col-sm-12">
-                    <h1 class="tan ss-color-block-background ss-margin-vertical-xs ss-padding-vertical-xl">Buttons/Links</h1>
-                    <ul class="ss-nav-horizontal">
+                    <h1 class="tan ssp-color-block-background ssp-margin-vertical-xs ssp-padding-vertical-xl">Buttons/Links</h1>
+                    <ul class="ssp-nav-horizontal">
                         <li><h1>Jump to:</h1></li>
-                        <li><a href="javascript:void();">Buttons</a></li
-                        ><li><a href="javascript:void();">Groups</a></li
-                        ><li><a href="javascript:void();">Links</a></li
-                        ><li><a href="javascript:void();">Nav</a></li
-                        ><li><a href="javascript:void();">Examples</a></li>
+                        <li><a href="#buttons">Buttons</a></li
+                        ><li><a href="#nav">Nav</a></li>
                     </ul>
 
                     <hr />
 
-                    <h2 class="red ss-color-block">Static Buttons</h2>
+                    <h2 id="buttons" class="red ssp-color-block">Static Buttons</h2>
 
-                    <button class="ss-btn blue ss-margin-vertical-sm">Default Button</button>
-                    <button class="ss-btn green ss-margin-vertical-sm">Success Button</button>
-                    <button class="ss-btn red ss-margin-vertical-sm">Warning Button</button>
-                    <button class="ss-btn block">Block Level Button</button>
+                    <button class="ssp-btn ssp-margin-vertical-sm">Default Button</button>
+                    <button class="ssp-btn ghoast ssp-margin-vertical-sm">Ghoast Button</button>
+                    <button class="ssp-btn urgent ssp-margin-vertical-sm">Urgent Button</button>
+                  </div>
 
-                    <hr />
+<!-- Animated Buttons, not in use
 
-                    <h2 class="green ss-color-block">Animated Buttons</h2>               
 
-                    <button class="ss-btn btn-animated blue ss-margin-vertical-sm" data-sample="btnAnim1">
+<div class="col-sm-12">
+                    <h2 class="green ssp-color-block">Animated Buttons</h2>
+
+                    <button class="ssp-btn btn-animated blue ssp-margin-vertical-sm" data-sample="btnAnim1">
                         <div class="original-text">Submit Success</div>
                         <div class="succeeded-text">Success!</div>
                         <div class="warned-text">Please Try Again</div>
                     </button>
-                    <button class="ss-btn btn-animated tan ss-margin-vertical-sm" data-sample="btnAnim2">
+                    <button class="ssp-btn btn-animated tan ssp-margin-vertical-sm" data-sample="btnAnim2">
                         <div class="original-text">Submit Error</div>
                         <div class="succeeded-text">Success!</div>
                         <div class="warned-text">Please Try Again</div>
                     </button>
-                    <button class="ss-btn btn-animated tan block ss-margin-vertical-sm" data-sample="btnAnim1">
+                    <button class="ssp-btn btn-animated tan block ssp-margin-vertical-sm" data-sample="btnAnim1">
                         <div class="original-text">Block Level Button with Animation</div>
                         <div class="succeeded-text">Success!</div>
                         <div class="warned-text">Please Try Again</div>
                     </button>
 
                 </div>
-                <div class="col-sm-12 ss-margin-vertical-xl">
-                    <button class="ss-btn" type="button" data-toggle="collapse" data-target="#btn-animated-html" aria-expanded="true" aria-controls="btn-animated-html">
+
+                <div class="col-sm-12 ssp-margin-vertical-xl">
+                    <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#btn-animated-html" aria-expanded="true" aria-controls="btn-animated-html">
                         View HTML
                     </button>
-                    <button class="ss-btn" type="button" data-toggle="collapse" data-target="#btn-animated-jquery" aria-expanded="false" aria-controls="btn-animated-jquery">
+                    <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#btn-animated-jquery" aria-expanded="false" aria-controls="btn-animated-jquery">
                         jQuery
                     </button>
                     <div class="collapse in" id="btn-animated-html">
                         <pre>
-<em class="tag">&lt;button</em> <em class="attr">class="</em><em class="class">ss-btn btn-animated <a class="alt" data-toggle="tooltip" title="See 'Colors' page.">blue</a></em><em class="attr">"</em><em class="tag">&gt;</em>
+<em class="tag">&lt;button</em> <em class="attr">class="</em><em class="class">ssp-btn btn-animated <a class="alt" data-toggle="tooltip" title="See 'Colors' page.">blue</a></em><em class="attr">"</em><em class="tag">&gt;</em>
     <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">original-text</em><em class="attr">"</em><em class="tag">&gt;</em>
         Initial Button Text
     <em class="tag">&lt;/div&gt;</em>
@@ -172,7 +180,7 @@
         Warning Message
     <em class="tag">&lt;/div&gt;</em>
 <em class="tag">&lt;/button&gt;</em></pre>
-                    </div><!-- /.collapse#quote-html -->
+                    </div>
                     <div class="collapse" id="btn-animated-jquery">
                         <pre><p>
                             <em class="tag">e</em><em class="attr">.addClass(</em>'<em class="class">animate</em>'<em class="attr">)</em>;
@@ -182,29 +190,34 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id tempore iusto nesciunt omnis provident quas consequatur distinctio, tenetur repudiandae, commodi perferendis delectus possimus beatae eaque illum eos debitis natus. Nulla?
                         </p></pre>
                     </div>
-                </div><!-- /.col-sm-12 -->
-            </div><!-- /.row.ss-section -->
+                </div>
 
-            <div class="row ss-section">
+End Animated Buttons, not in use-->
+
+            </div><!-- /.row.ssp-section -->
+
+            <div class="row ssp-section">
                 <div class="col-sm-12">
-                    <h2 class="light-grey ss-color-block">Nav</h2>
+                  <hr />
+
+                    <h2 id="nav" class="light-grey ssp-color-block">Nav</h2>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <ul class="ss-nav-list">
+                    <ul class="ssp-nav-list">
                         <li><h1>List Title</h1></li>
                         <li><a>List Item</a></li>
                         <li><a>List Item</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <ul class="ss-nav-list disc">
+                    <ul class="ssp-nav-list disc">
                         <li><h1>List Title</h1></li>
                         <li><a>List Item</a></li>
                         <li><a>List Item</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <ul class="ss-nav-list ss-border">
+                    <ul class="ssp-nav-list ssp-border">
                         <li><h1>List Title</h1></li>
                         <li><a>List Item</a></li>
                         <li><a>List Item</a></li>
@@ -212,7 +225,7 @@
                 </div>
                 <hr class="white" />
                 <div class="col-sm-12 col-md-12">
-                    <ul class="ss-nav-horizontal">
+                    <ul class="ssp-nav-horizontal">
                         <li><h1>List Title</h1></li>
                         <li><a href="javascript:void(0);">List Item</a></li
                         ><li><a href="javascript:void(0);">List Item</a></li
@@ -222,7 +235,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-12">
-<pre><em class="tag">&lt;ul</em> <em class="attr">class="</em><em class="class">ss-nav-horizontal</em><em class="attr">"</em><em class="tag">&gt;</em>
+<pre><em class="tag">&lt;ul</em> <em class="attr">class="</em><em class="class">ssp-nav-horizontal</em><em class="attr">"</em><em class="tag">&gt;</em>
     <em class="tag">&lt;li&gt;</em>
         <em class="tag">&lt;h1&gt;</em>List Title<em class="tag">&lt;/h1&gt;</em>
     <em class="tag">&lt;/li&gt;</em>
@@ -231,7 +244,7 @@
     <em class="tag">&lt;li&gt;</em>
 <em class="tag">&lt;/ul&gt;</em></pre>
                 </div>
-            </div><!-- /.row.ss-section -->
+            </div><!-- /.row.ssp-section -->
 
         </div>
     </div><!-- /.row -->
@@ -243,7 +256,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/ss-v6.js"></script>
+<script src="js/ssp-v6.js"></script>
 
 </body>
 </html>
