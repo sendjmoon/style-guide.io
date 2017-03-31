@@ -1,7 +1,7 @@
 ﻿[
   {
-    "outputFile": "v6.css",
-    "inputFile": "v6.less",
+    "outputFile": "css/v6.css",
+    "inputFile": "less/v6.less",
     "minify": {
       "enabled": false
     },

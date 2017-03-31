@@ -1,0 +1,154 @@
+﻿/*gobal secondstep.org v6.css*/
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url('../less/fonts/ProximaNova-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../less/fonts/ProximaNova-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('../less/fonts/ProximaNova-Reg-webfont.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaSemi';
+  src: url('../less/fonts/ProximaNova-Sbold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../less/fonts/ProximaNova-Bold-webfont.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaXtraBold';
+  src: url('../less/fonts/ProximaNova-Extrabld.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* For IE */
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url('../less/fonts/ProximaNova-Thin-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaThinItalic';
+  src: url('../less/fonts/ProximaNova-ThinIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../less/fonts/ProximaNova-Light-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLightItalic';
+  src: url('../less/fonts/ProximaNova-LightIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLightItalic';
+  src: url('../less/fonts/ProximaNova-LightIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('../less/fonts/ProximaNova-Reg-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaRegularItalic';
+  src: url('../less/fonts/ProximaNova-RegIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaSemi';
+  src: url('../less/fonts/ProximaNova-Sbold-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaSemiItalic';
+  src: url('../less/fonts/ProximaNova-SboldIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../less/fonts/ProximaNova-Bold-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBoldItalic';
+  src: url('../less/fonts/ProximaNova-BoldIt-webfont.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.ssp-main-container {
+  font-size: 16px;
+}
+.ssp-main-container h1,
+.ssp-main-container h2,
+.ssp-main-container h3,
+.ssp-main-container h4,
+.ssp-main-container h5,
+.ssp-main-container h6 {
+  font-family: "Proxima Nova Thin", sans-serif;
+  color: #000;
+  margin: 10px 0 10px 0;
+  font-weight: bold;
+}
+.ssp-main-container h1.regular,
+.ssp-main-container h2.regular,
+.ssp-main-container h3.regular,
+.ssp-main-container h4.regular,
+.ssp-main-container h5.regular,
+.ssp-main-container h6.regular {
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 1.500em;
+  color: #333;
+}
+.ssp-main-container h1.semi,
+.ssp-main-container h2.semi,
+.ssp-main-container h3.semi,
+.ssp-main-container h4.semi,
+.ssp-main-container h5.semi,
+.ssp-main-container h6.semi {
+  font-family: 'ProximaNovaSemi', sans-serif;
+}
+.ssp-main-container h1 {
+  font-size: 2.250em;
+}
+.ssp-main-container h2 {
+  font-size: 1.750em;
+}
+.ssp-main-container h3 {
+  font-size: 1.5em;
+}
+.ssp-main-container h4 {
+  font-size: 1.313em;
+}
+.ssp-main-container h5 {
+  font-size: 1.5em;
+}
+.ssp-main-container h6 {
+  font-size: 1.5em;
+}
