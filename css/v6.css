@@ -152,3 +152,111 @@
 .ssp-main-container h6 {
   font-size: 1.5em;
 }
+.ssp-main-container a {
+  color: #0478b5;
+}
+.ssp-main-container a:hover {
+  color: #0478b5;
+}
+.ssp-main-container a:visited {
+  color: #8961b2;
+}
+.ssp-main-container a:active {
+  color: #0478b5;
+}
+.ssp-main-container .ss-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 0px solid transparent;
+  white-space: nowrap;
+  padding: 11px 20px;
+  border-radius: 0;
+  color: #fff !important;
+  background: #4b82a8;
+}
+.ssp-main-container .ss-btn:hover {
+  background-color: #4ba0c8 !important;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none !important;
+}
+.ssp-main-container .ss-btn:visited {
+  text-decoration: none !important;
+}
+.ssp-main-container .ss-btn.blue {
+  background-color: #4b82a8;
+  border-color: #4b82a8;
+}
+.ssp-main-container .ghost-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid #4b82a8;
+  white-space: nowrap;
+  padding: 11px 80px;
+  border-radius: 0;
+  color: #4b82a8 !important;
+  background: #fff;
+}
+.ssp-main-container .ghost-btn:hover {
+  background-color: #4b82a8 !important;
+  color: #fff !important;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none !important;
+}
+.ssp-main-container .ghost-btn.visited {
+  text-decoration: none !important;
+}
+.ssp-main-container .ghost-btn-sm {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid #4b82a8;
+  white-space: nowrap;
+  padding: 2px 15px;
+  border-radius: 0;
+  color: #4b82a8 !important;
+  background: #fff;
+}
+.ssp-main-container .ghost-btn-sm:hover {
+  background-color: #4b82a8 !important;
+  color: #fff !important;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none !important;
+}
+.ssp-main-container .ghost-btn-sm:visited {
+  text-decoration: none !important;
+}
