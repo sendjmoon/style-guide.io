@@ -178,85 +178,42 @@
   background-image: none;
   border: 0px solid transparent;
   white-space: nowrap;
-  padding: 11px 20px;
+  padding: 13px 60px 13px 60px;
   border-radius: 0;
   color: #fff !important;
+  font-family: 'ProximaNovaSemi', sans-serif;
   background: #4b82a8;
 }
 .ssp-main-container .ss-btn:hover {
-  background-color: #4ba0c8 !important;
+  background-color: #4ba0c8;
+  color: #222 !important;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .ssp-main-container .ss-btn:visited {
-  text-decoration: none !important;
+  text-decoration: none;
 }
-.ssp-main-container .ss-btn.blue {
+.ssp-main-container .ss-btn.alert-bt {
+  background-color: #d44e05;
+  border: 2px solid #ab4501;
+  padding: 11px 60px 11px 60px;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.ssp-main-container .ss-btn.alert-bt:hover {
+  background-color: #b34304;
+  border: 2px solid #b34304;
+  color: #fff !important;
+}
+.ssp-main-container .ss-btn.ghost-btn {
+  border: 2px solid #4b82a8;
+  color: #4b82a8 !important;
+  background: #fff;
+  padding: 11px 60px 11px 60px;
+}
+.ssp-main-container .ss-btn.ghost-btn:hover {
   background-color: #4b82a8;
-  border-color: #4b82a8;
-}
-.ssp-main-container .ghost-btn {
-  display: inline-block;
-  margin-bottom: 0;
-  width: auto;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1em;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 2px solid #4b82a8;
-  white-space: nowrap;
-  padding: 11px 80px;
-  border-radius: 0;
-  color: #4b82a8 !important;
-  background: #fff;
-}
-.ssp-main-container .ghost-btn:hover {
-  background-color: #4b82a8 !important;
   color: #fff !important;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  text-decoration: none !important;
-}
-.ssp-main-container .ghost-btn.visited {
-  text-decoration: none !important;
-}
-.ssp-main-container .ghost-btn-sm {
-  display: inline-block;
-  margin-bottom: 0;
-  width: auto;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1em;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 2px solid #4b82a8;
-  white-space: nowrap;
-  padding: 2px 15px;
-  border-radius: 0;
-  color: #4b82a8 !important;
-  background: #fff;
-}
-.ssp-main-container .ghost-btn-sm:hover {
-  background-color: #4b82a8 !important;
-  color: #fff !important;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  text-decoration: none !important;
-}
-.ssp-main-container .ghost-btn-sm:visited {
-  text-decoration: none !important;
 }
