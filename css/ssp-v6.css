@@ -245,7 +245,7 @@ hr {
   color: #FCB715;
 }
 .ssp-content {
-  padding: 0px 60px 0px 20px;
+  padding: 0 60px 0 20px;
 }
 .ssp-clear {
   clear: both;
@@ -254,7 +254,7 @@ hr {
   float: right;
 }
 .ssp-p2 p {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .ssp-p2 img {
   float: left;
@@ -407,7 +407,7 @@ aside {
   width: 25%;
   float: right;
   background-color: #ececec;
-  padding: 15px 25px 25px 25px;
+  padding: 15px 25px 25px;
 }
 footer {
   height: 100px;
@@ -562,8 +562,8 @@ code span {
   align-items: center;
   overflow: hidden;
 }
-.ssp-jumbotron h1,
-.ssp-jumbotron .h1 {
+.ssp-jumbotron .h1,
+.ssp-jumbotron h1 {
   color: #444;
   position: relative;
   z-index: 2;
@@ -579,7 +579,7 @@ code span {
 }
 .container .ssp-jumbotron,
 .container-fluid .ssp-jumbotron {
-  border-radius: 0px;
+  border-radius: 0;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -596,8 +596,8 @@ code span {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .ssp-jumbotron h1,
-  .ssp-jumbotron .h1 {
+  .ssp-jumbotron .h1,
+  .ssp-jumbotron h1 {
     font-size: 48px;
   }
 }
@@ -774,7 +774,7 @@ img.ssp-thumbnail-left {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
   padding: 11px 20px;
   transition: all 200ms;
   border-radius: 0;
@@ -786,15 +786,15 @@ img.ssp-thumbnail-left {
   font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 16px;
   color: #fff;
-  margin: 0px;
+  margin: 0;
   text-align: center;
 }
-.ssp-btn:hover,
 .ssp-btn:active,
-.ssp-btn:focus {
+.ssp-btn:focus,
+.ssp-btn:hover {
   color: #fff;
   background: #4ba0c8;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
 }
 .ssp-btn.ssp-btn-small {
   padding-top: 7px;
@@ -812,9 +812,9 @@ img.ssp-thumbnail-left {
   color: #4b82a8;
   background: #fff;
 }
-.ssp-btn.ghoast:hover,
 .ssp-btn.ghoast:active,
-.ssp-btn.ghoast:focus {
+.ssp-btn.ghoast:focus,
+.ssp-btn.ghoast:hover {
   background: #4b82a8;
   color: #fff;
   text-decoration: none;
@@ -823,9 +823,9 @@ img.ssp-thumbnail-left {
   text-transform: uppercase;
   background: #ef6b23;
 }
-.ssp-btn.urgent:hover,
 .ssp-btn.urgent:active,
-.ssp-btn.urgent:focus {
+.ssp-btn.urgent:focus,
+.ssp-btn.urgent:hover {
   background: #ffaa82;
 }
 .ssp-btn.btn-animated {
@@ -859,7 +859,7 @@ img.ssp-thumbnail-left {
   top: 50%;
   left: 10%;
   right: 10%;
-  animation: 1500ms ease-in-out 0ms infinite normal forwards thinking-bar-animation;
+  animation: 1500ms ease-in-out 0 infinite normal forwards thinking-bar-animation;
 }
 @keyframes thinking-bar-animation {
   0% {
@@ -1249,9 +1249,9 @@ h6 {
   font-size: 18px;
   margin: 10px 0 8px;
 }
+ol,
 p,
-ul,
-ol {
+ul {
   font-family: 'Proxima Nova Light';
   font-size: 16px;
   line-height: 20px;
@@ -1266,8 +1266,8 @@ p.large {
   line-height: 1.5;
   margin-bottom: 24px;
 }
-small,
-.small {
+.small,
+small {
   font-size: 14px;
 }
 .extra-small {
@@ -1348,17 +1348,11 @@ ul.ssp-nav-horizontal li h1 {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding: 14px 10px 14px 20px;
 }
 ul.ssp-nav-horizontal li a {
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 14px 20px;
   transition: background 500ms;
   border-bottom: 4px solid #ebe7dc;
   color: #666;

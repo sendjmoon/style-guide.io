@@ -1,11 +1,7 @@
 // #VARIABLES
-
 // #BTN
-
-@ssp-border-radius: 0px;
-
+@ssp-border-radius: 0;
 // #COLOR
-
 @ssp-color-red: #F84139;
 @ssp-color-green: #33a86a;
 @ssp-color-blue: #4b82a8;
@@ -27,14 +23,12 @@
 @ssp-color-darkest-grey: #535658;
 @ssp-color-primary: @ssp-color-blue;
 @ssp-color-secondary: @ssp-color-tan;
-
 @ssp-color-link-blue: #0478b5;
 @ssp-color-link-blue-hover: #4ba0c8;
 @ssp-color-link-header: #4e82a7;
 @ssp-color-link-urgent: #ef6b23;
 @ssp-color-link-urgent-hover: #ffaa82;
 @ssp-color-link-visited: #8961b2;
-
 @ssp-color-early-learning: #009CDE;
 @ssp-color-kindergarten: #CE1443;
 @ssp-color-grade-1: #F47B2A;
@@ -46,63 +40,55 @@
 @ssp-color-grade-7: #699AC5;
 @ssp-color-grade-8: #FCB715;
 @ssp-color-light-neutral: #EFEBE3;
-
 // #TYPOGRAPHY
-
-@font-face{
+@font-face {
   font-family: "Proxima Nova";
-  src: url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
-  url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype');
+  src: url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Italic";
   src: url('../fonts/ProximaNova-RegIt-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Thin";
-  src: url('../fonts/ProximaNova-Thin.otf') format('opentype'),
-  url('../fonts/ProximaNova-Thin-webfont.woff') format('woff');
+  src: url('../fonts/ProximaNova-Thin.otf') format('opentype'), url('../fonts/ProximaNova-Thin-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Thin Italic";
   src: url('../fonts/ProximaNova-ThinIt-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Light";
-  src: url('../fonts/ProximaNova-Light.otf') format('opentype'),
-  url('../fonts/ProximaNova-Light-webfont.woff') format('woff');
+  src: url('../fonts/ProximaNova-Light.otf') format('opentype'), url('../fonts/ProximaNova-Light-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Light Italic";
   src: url('../fonts/ProximaNova-LightIt-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Semibold";
-  src: url('../fonts/ProximaNova-Sbold.otf') format('opentype'),
-  url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff');
+  src: url('../fonts/ProximaNova-Sbold.otf') format('opentype'), url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Semibold Italic";
   src: url('../fonts/ProximaNova-SboldIt-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Bold";
-  src: url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'),
-    url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype');
+  src: url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'), url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: "Proxima Nova Bold Italic";
   src: url('../fonts/ProximaNova-BoldIt-webfont.woff') format('woff');
 }
-@font-face{
+@font-face {
   font-family: "Proxima Nova Extra Bold";
   src: url('../fonts/ProximaNova-Extrabld.otf') format('opentype');
 }
-@font-face{
+@font-face {
   font-family: "Arial Black";
   src: url('../fonts/arial_black-webfont.ttf') format('truetype');
 }
-
 @ssp-font-proxima-nova: "Proxima Nova", sans-serif;
 @ssp-font-proxima-nova-italic: "Proxima Nova Italic", sans-serif;
 @ssp-font-proxima-nova-thin: "Proxima Nova Thin", sans-serif;
@@ -116,28 +102,27 @@
 @ssp-font-proxima-nova-extra-bold: "Proxima Nova Extra Bold", sans-serif;
 @ssp-font-arial-black: "Arial Black", Arial, sans-serif;
 @ssp-font-muli: 'Muli',"Myriad Web Pro", arial, serif;
-@ssp-font-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-
+@ssp-font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 @ssp-padding-vertical-base: 14px;
 @ssp-padding-horizontal-base: 20px;
-
 @ssp-font-size-base: 16px;
-
-@ssp-font-size-large:         ceil((@ssp-font-size-base * 1.25));  // ~20px
-@ssp-font-size-small:         ceil((@ssp-font-size-base * 0.875));  // ~14px
-@ssp-font-size-extra-small:   ceil((@ssp-font-size-base * 0.75));  // ~12px
-
-@ssp-font-size-h1:            floor((@ssp-font-size-base * 2));    // 32px
-@ssp-font-size-h2:            floor((@ssp-font-size-base * 1.625)); // 26px
-@ssp-font-size-h3:            floor((@ssp-font-size-base * 1.375));  // 22px
-@ssp-font-size-h4:            floor((@ssp-font-size-base * 1.25)); // 20px
-@ssp-font-size-h5:            floor((@ssp-font-size-base * 1.125)); // 18px
-@ssp-font-size-h6:            floor((@ssp-font-size-base * 1.125)); // 18px
-@ssp-font-size-p-intro-txt:     floor((@ssp-font-size-base * 1.1875)); // 19px
-
+@ssp-font-size-large: ceil((@ssp-font-size-base * 1.25));
+// ~20px
+@ssp-font-size-small: ceil((@ssp-font-size-base * 0.875));
+// ~14px
+@ssp-font-size-extra-small: ceil((@ssp-font-size-base * 0.75));
+// ~12px
+@ssp-font-size-h1: floor((@ssp-font-size-base * 2));
+// 32px
+@ssp-font-size-h2: floor((@ssp-font-size-base * 1.625)); // 26px
+@ssp-font-size-h3: floor((@ssp-font-size-base * 1.375));
+// 22px
+@ssp-font-size-h4: floor((@ssp-font-size-base * 1.25)); // 20px
+@ssp-font-size-h5: floor((@ssp-font-size-base * 1.125)); // 18px
+@ssp-font-size-h6: floor((@ssp-font-size-base * 1.125)); // 18px
+@ssp-font-size-p-intro-txt: floor((@ssp-font-size-base * 1.1875)); // 19px
 @ssp-line-height-base: 1.5; // 20/14
-@line-height-computed:    floor((@ssp-font-size-base * @ssp-line-height-base));
-
+@line-height-computed: floor((@ssp-font-size-base * @ssp-line-height-base));
 @ssp-pad-base: @ssp-font-size-base;
 @ssp-pad-xs: @ssp-pad-base * 0.25;
 @ssp-pad-sm: @ssp-pad-base * 0.5;
@@ -145,7 +130,6 @@
 @ssp-pad-lg: @ssp-pad-base * 2;
 @ssp-pad-xl: @ssp-pad-base * 3;
 @ssp-pad-xxl: @ssp-pad-base * 5;
-
 @ssp-mar-base: @ssp-font-size-base;
 @ssp-mar-xs: @ssp-mar-base * 0.25;
 @ssp-mar-sm: @ssp-mar-base * 0.5;
