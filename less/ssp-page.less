@@ -491,7 +491,8 @@ pre {
 
   p {
     padding: 0;
-    font-size: inherit;
+    // font-size: inherit;
+    font-size: 19px;
     color: inherit;
     white-space: normal;
     word-break: break-word;
@@ -620,7 +621,8 @@ code {
 
   p {
     margin-bottom: (@ssp-padding-horizontal-base / 2);
-    font-size: @ssp-font-size-base * 1.25;
+    // font-size: @ssp-font-size-base * 1.25;
+    font-size: 19px;
     position: relative;
     z-index: 2;
   }
@@ -690,8 +692,9 @@ code {
 
   &-text {
     font-family: @ssp-font-proxima-nova;
-    font-size: @ssp-font-size-base;
-    line-height: 20px;
+    // font-size: @ssp-font-size-base;
+    font-size: 19px;
+    line-height: 30px;
     margin: 5px 0 15px;
     color: @ssp-color-heavy;
   }
@@ -715,7 +718,7 @@ body {
 
 a {
   color: @ssp-color-link-blue;
-  line-height: @ssp-line-height-base;
+  line-height: 30px;
 
   &:hover {
     color: @ssp-color-link-blue-hover;
@@ -847,7 +850,8 @@ img {
 
   p {
     font-family: @ssp-font-proxima-nova-semibold;
-    font-size: @ssp-font-size-base;
+    // font-size: @ssp-font-size-base;
+    font-size: 19px;
     color: @ssp-color-white;
     margin: 0;
     text-align: center;
@@ -1021,7 +1025,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: @ssp-font-proxima-nova-thin;
+  font-family: @ssp-font-proxima-nova-light;
   position: relative;
   color: #000;
   margin-top: (@line-height-computed * 1.5);
@@ -1140,8 +1144,8 @@ ol,
 p,
 ul {
   font-family: 'Proxima Nova Light';
-  font-size: @ssp-font-size-base;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 30px;
   margin: 5px 0 15px;
   color: @ssp-color-body;
 }
@@ -1252,6 +1256,7 @@ ul {
   &.ssp-nav-horizontal {
     background: @ssp-color-light-grey;
     margin: 0;
+    padding: 0;
 
     li {
       display: inline-block;
@@ -1269,10 +1274,9 @@ ul {
         padding: @ssp-padding-vertical-base @ssp-padding-horizontal-base;
         transition: background 500ms;
         border-bottom: 4px solid rgba(0, 0, 0, 0);
-        color: @ssp-color-grey;
+        color: @ssp-color-link-blue;
 
         &:hover {
-          color: @ssp-color-dark-tan;
           border-bottom: 4px solid @ssp-color-blue;
           text-decoration: none;
         }

@@ -453,7 +453,7 @@ pre label {
 }
 pre p {
   padding: 0;
-  font-size: inherit;
+  font-size: 19px;
   color: inherit;
   white-space: normal;
   word-break: break-word;
@@ -574,7 +574,7 @@ code span {
 }
 .ssp-jumbotron p {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 19px;
   position: relative;
   z-index: 2;
 }
@@ -631,8 +631,8 @@ code span {
 }
 .tan-box-text {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 30px;
   margin: 5px 0 15px;
   color: #333;
 }
@@ -651,7 +651,7 @@ body {
 }
 a {
   color: #0077c7;
-  line-height: 1.5;
+  line-height: 30px;
 }
 a:hover {
   color: #0077c7;
@@ -789,7 +789,7 @@ img.ssp-thumbnail-left {
 }
 .ssp-btn p {
   font-family: "Proxima Nova Semibold", sans-serif;
-  font-size: 16px;
+  font-size: 19px;
   color: #fff;
   margin: 0;
   text-align: center;
@@ -958,7 +958,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Proxima Nova Thin", sans-serif;
+  font-family: "Proxima Nova Light", sans-serif;
   position: relative;
   color: #000;
   margin-top: 36px;
@@ -1324,8 +1324,8 @@ ol,
 p,
 ul {
   font-family: 'Proxima Nova Light';
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 30px;
   margin: 5px 0 15px;
   color: #222;
 }
@@ -1410,6 +1410,7 @@ ul.ssp-border li a {
 ul.ssp-nav-horizontal {
   background: #e6e5e9;
   margin: 0;
+  padding: 0;
 }
 ul.ssp-nav-horizontal li {
   display: inline-block;
@@ -1426,10 +1427,9 @@ ul.ssp-nav-horizontal li a {
   padding: 14px 20px;
   transition: background 500ms;
   border-bottom: 4px solid rgba(0, 0, 0, 0);
-  color: #666;
+  color: #0077c7;
 }
 ul.ssp-nav-horizontal li a:hover {
-  color: #565455;
   border-bottom: 4px solid #0478b5;
   text-decoration: none;
 }
