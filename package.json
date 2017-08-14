@@ -1,0 +1,24 @@
+{
+  "name": "style-guide.io",
+  "version": "0.0.1",
+  "description": "committee for children - second step style guide",
+  "main": "global.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendjmoon/style-guide.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sendjmoon/style-guide.io/issues"
+  },
+  "homepage": "https://github.com/sendjmoon/style-guide.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-watch": "^4.3.11"
+  }
+}
