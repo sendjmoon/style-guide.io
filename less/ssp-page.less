@@ -533,6 +533,9 @@ pre {
 //pre
 
 code {
+  background-color: @ssp-color-light-grey;
+  color: #ce1443;
+
   span {
     font-style: italic;
     border-bottom: 1px dotted;
@@ -578,10 +581,10 @@ code {
 //ssp-sample-container
 
 .ssp-sample-row {
-  background: rgba(240, 84, 64, 0.25);
+  background: rgba(4, 120, 181, 0.25);
 
   .ssp-sample-col {
-    background: rgba(240, 84, 64, 0.25);
+    background: rgba(4, 120, 181, 0.25);
     outline: 1px solid #fff;
 
     label,
@@ -711,10 +714,11 @@ body {
 }
 
 a {
-  color: @ssp-color-blue;
+  color: @ssp-color-link-blue;
   line-height: @ssp-line-height-base;
 
   &:hover {
+    color: @ssp-color-link-blue-hover;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -737,7 +741,7 @@ a {
       float: left;
       position: absolute;
       left: 0;
-      background: @ssp-color-green;
+      background: @ssp-color-blue;
     }
   }
 
@@ -1047,6 +1051,14 @@ h6 {
     .ssp-color-block(@ssp-color-tan);
   }
 
+  &.grey {
+    .ssp-color-block(@ssp-color-light-grey);
+  }
+
+  &.blue {
+    .ssp-color-block(@ssp-color-blue);
+  }
+
   &.red {
     .ssp-color-block(@ssp-color-red);
   }
@@ -1238,7 +1250,7 @@ ul {
   //ssp-border
 
   &.ssp-nav-horizontal {
-    background: @ssp-color-tan;
+    background: @ssp-color-light-grey;
     margin: 0;
 
     li {
@@ -1256,12 +1268,12 @@ ul {
         margin: 0;
         padding: @ssp-padding-vertical-base @ssp-padding-horizontal-base;
         transition: background 500ms;
-        border-bottom: 4px solid @ssp-color-tan;
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
         color: @ssp-color-grey;
 
         &:hover {
           color: @ssp-color-dark-tan;
-          border-bottom: 4px solid @ssp-color-blue-on-tan;
+          border-bottom: 4px solid @ssp-color-blue;
           text-decoration: none;
         }
       }

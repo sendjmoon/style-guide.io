@@ -85,7 +85,7 @@
 
         <div class="row ssp-section">
           <div class="col-sm-12">
-            <h1 class="tan ssp-color-block-background ssp-margin-vertical-xs ssp-padding-vertical-xl">Layout</h1>
+            <h1 class="grey ssp-color-block-background ssp-margin-vertical-xs ssp-padding-vertical-xl">Layout</h1>
             <ul class="ssp-nav-horizontal">
               <li>
                 <h1>Jump to:</h1></li>
@@ -95,7 +95,7 @@
             </ul>
             <hr />
 
-            <h2 id="grid" class="tan ssp-color-block">The Grid</h2>
+            <h2 id="grid" class="blue ssp-color-block">The Grid</h2>
 
             <p>
               SS follows the default Bootstrap grid of
@@ -280,27 +280,27 @@
             <div class="row">
               <div class="ssp-xtras col-sm-12 ssp-margin-vertical-xxl ssp-margin-vertical-none-bottom">
                 <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#grid-html" aria-expanded="true" aria-controls="grid-html">
-                                View HTML
-                            </button>
-                <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#grid-notes" aria-expanded="false" aria-controls="grid-notes">
-                                Notes
-                            </button>
+                  HTML
+                </button>
                 <div class="collapse in" id="grid-html">
                   <pre>
 <code><em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
-    <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-12 col-md-6 col-lg-4</em><em class="attr">"</em><em class="tag">></em>
-        Content
-        <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
-            <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
-                Nested Content
-            <em class="tag">&lt;/div&gt;</em>
-        <em class="tag">&lt;/div&gt;</em>
-        <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
-            <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
-                Nested Content
-            <em class="tag">&lt;/div&gt;</em>
-        <em class="tag">&lt;/div&gt;</em>
+  <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-12 col-md-6 col-lg-4</em><em class="attr">"</em><em class="tag">></em>
+    Content
+
+    <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
+      <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
+        Nested Content
+      <em class="tag">&lt;/div&gt;</em>
     <em class="tag">&lt;/div&gt;</em>
+
+    <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">row</em><em class="attr">"</em><em class="tag">></em>
+      <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">col-sm-6</em><em class="attr">"</em><em class="tag">></em>
+        Nested Content
+      <em class="tag">&lt;/div&gt;</em>
+    <em class="tag">&lt;/div&gt;</em>
+
+  <em class="tag">&lt;/div&gt;</em>
 <em class="tag">&lt;/div&gt;</em></code></pre>
                 </div>
                 <!-- /.collapse#grid-html -->
@@ -321,7 +321,7 @@
         <div class="row ssp-section">
           <div class="col-sm-12">
             <hr />
-            <h2 id="spacing" class="tan ssp-color-block">Spacing</h2>
+            <h2 id="spacing" class="green ssp-color-block">Spacing</h2>
             <p>
               Margin and Padding adjustments can be done using classes following this structure:<br />
               <code>.ssp-type-<span>size</span>-<span>direction</span></code>
@@ -427,127 +427,14 @@
           <!-- /.col-sm-12 -->
           <div class="ssp-xtras col-sm-12 ssp-margin-vertical-xxl ssp-margin-vertical-none-bottom">
             <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#spacing-html" aria-expanded="true" aria-controls="spacing-html">
-                        View HTML
-                    </button>
-            <button class="ssp-btn" type="button" data-toggle="collapse" data-target="#spacing-notes" aria-expanded="false" aria-controls="spacing-notes">
-                        Notes
-                    </button>
+              HTML
+            </button>
             <div class="collapse in" id="spacing-html">
               <pre>
 <code>
 <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">ssp-<i>type</i>-<i>size</i>-<i>direction</i></em><em class="attr">"</em><em class="tag">&gt;</em><em class="tag">&lt;/div&gt;</em>
 </code></pre>
-            </div>
-            <!-- /.collapse#spacing-html -->
-            <div class="collapse" id="spacing-notes">
-              <pre><code><p>
-                            Layer spacing classes as you please but conflicting combinations may have unfavorable results depending on their order within the stylesheet. To get, for example, Xtra Large padding on all sides except the left <em class="attr">class="</em><em class="class">ssp-pad-xl-all ssp-pad-none-left</em><em class="attr">"</em> would work just fine.
-                        </p><p>
-                            <em class="class">-xl-all</em> and <em class="class">-xl</em> achieve the same result. This applies to all <em class="attr">sizes</em> with no <em class="attr">direction</em> added. See table below for example.
-                        </p>
-                        <h4>Vertical/Horizontal</h4><table class="table table-bordered text-center ssp-margin-matrix">
-                            <tr >
-                                <td></td>
-                                <td><b>0</b></td>
-                                <td><b>4</b></td>
-                                <td><b>8</b></td>
-                                <td><b>16</b></td>
-                                <td><b>32</b></td>
-                                <td><b>48</b></td>
-                                <td><b>80</b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>0</b></td>
-                                <td>-none</td>
-                                <td>-xs-v</td>
-                                <td>-sm-v</td>
-                                <td>-md-v</td>
-                                <td>-lg-v</td>
-                                <td>-xl-v</td>
-                                <td>-xxl-v</td>
-                                <td><b>0</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>4</b></td>
-                                <td>-xs-h</td>
-                                <td>-xs</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><b>4</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>8</b></td>
-                                <td>-sm-h</td>
-                                <td></td>
-                                <td>-sm</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><b>8</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>16</b></td>
-                                <td>-md-h</td>
-                                <td></td>
-                                <td></td>
-                                <td>-md</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><b>16</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>32</b></td>
-                                <td>-lg-h</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>-lg</td>
-                                <td></td>
-                                <td></td>
-                                <td><b>32</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>48</b></td>
-                                <td>-xl-h</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>-xl</td>
-                                <td></td>
-                                <td><b>48</b></td>
-                            </tr>
-                            <tr>
-                                <td><b>80</b></td>
-                                <td>-xxl-h</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>-xxl</td>
-                                <td><b>80</b></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><b>0</b></td>
-                                <td><b>4</b></td>
-                                <td><b>8</b></td>
-                                <td><b>16</b></td>
-                                <td><b>32</b></td>
-                                <td><b>48</b></td>
-                                <td><b>80</b></td>
-                                <td></td>
-                            </tr>
-                        </table></code></pre>
-            </div>
-            <!-- /#spacing-notes -->
+
           </div>
           <!-- /.ssp-xtras -->
         </div>
@@ -595,23 +482,23 @@
               <div class="col-sm-12 col-md-6">
                 <pre>
 <code><em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">pull-left</em><em class="attr">"</em><em class="tag">&gt;</em>
-    Pull Left
+  Pull Left
 <em class="tag">&lt;/div&gt;</em>
 
 <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">pull-right</em><em class="attr">"</em><em class="tag">&gt;</em>
-    Pull Right
+  Pull Right
 <em class="tag">&lt;/div&gt;</em>
 
 <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">text-center</em><em class="attr">"</em><em class="tag">&gt;</em>
-    Center Text
+  Center Text
 <em class="tag">&lt;/div&gt;</em>
 
 <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="attr">...</em><em class="attr">"</em><em class="tag">&gt;</em>
-    <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">center-block</em><em class="attr">"</em><em class="tag">&gt;</em>
-        Center Block
-    <em class="tag">&lt;/div&gt;</em>
+  <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">center-block</em><em class="attr">"</em><em class="tag">&gt;</em>
+    Center Block
+  <em class="tag">&lt;/div&gt;</em>
 <em class="tag">&lt;/div&gt;</em>
-                            </code></pre>
+</code></pre>
               </div>
             </div>
 
