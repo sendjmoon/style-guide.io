@@ -524,6 +524,18 @@ pre {
     &.class {
       color: #3fdc89;
     }
+
+    &.css-el {
+      color: #e06c75;
+    }
+
+    &.css-gold {
+      color: #ddb17f;
+    }
+
+    &.css-important {
+      color: #c678dd;
+    }
   }
   //em
 
@@ -1753,8 +1765,21 @@ a[data-toggle="tooltip"] {
   .code-container {
 
     pre {
-      margin: 10px 0;
-      // margin-bottom: 45px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .code-btn {
+    margin-right: 3px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #263238;
+    color: #fff;
+
+    &.collapsed {
+      background: @ssp-color-blue;
     }
   }
 
