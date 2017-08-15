@@ -1002,7 +1002,7 @@ h3.tan.ssp-color-block,
 h4.tan.ssp-color-block,
 h5.tan.ssp-color-block,
 h6.tan.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.tan.ssp-color-block:before,
 h2.tan.ssp-color-block:before,
@@ -1026,7 +1026,7 @@ h3.tan.ssp-color-block-background,
 h4.tan.ssp-color-block-background,
 h5.tan.ssp-color-block-background,
 h6.tan.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #ebe7dc;
 }
 h1.grey.ssp-color-block,
@@ -1035,7 +1035,7 @@ h3.grey.ssp-color-block,
 h4.grey.ssp-color-block,
 h5.grey.ssp-color-block,
 h6.grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.grey.ssp-color-block:before,
 h2.grey.ssp-color-block:before,
@@ -1059,7 +1059,7 @@ h3.grey.ssp-color-block-background,
 h4.grey.ssp-color-block-background,
 h5.grey.ssp-color-block-background,
 h6.grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #e6e5e9;
 }
 h1.blue.ssp-color-block,
@@ -1068,7 +1068,7 @@ h3.blue.ssp-color-block,
 h4.blue.ssp-color-block,
 h5.blue.ssp-color-block,
 h6.blue.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.blue.ssp-color-block:before,
 h2.blue.ssp-color-block:before,
@@ -1092,7 +1092,7 @@ h3.blue.ssp-color-block-background,
 h4.blue.ssp-color-block-background,
 h5.blue.ssp-color-block-background,
 h6.blue.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #0478b5;
 }
 h1.red.ssp-color-block,
@@ -1101,7 +1101,7 @@ h3.red.ssp-color-block,
 h4.red.ssp-color-block,
 h5.red.ssp-color-block,
 h6.red.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.red.ssp-color-block:before,
 h2.red.ssp-color-block:before,
@@ -1125,7 +1125,7 @@ h3.red.ssp-color-block-background,
 h4.red.ssp-color-block-background,
 h5.red.ssp-color-block-background,
 h6.red.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #F84139;
 }
 h1.green.ssp-color-block,
@@ -1134,7 +1134,7 @@ h3.green.ssp-color-block,
 h4.green.ssp-color-block,
 h5.green.ssp-color-block,
 h6.green.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.green.ssp-color-block:before,
 h2.green.ssp-color-block:before,
@@ -1158,7 +1158,7 @@ h3.green.ssp-color-block-background,
 h4.green.ssp-color-block-background,
 h5.green.ssp-color-block-background,
 h6.green.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #33a86a;
 }
 h1.blue.ssp-color-block,
@@ -1167,7 +1167,7 @@ h3.blue.ssp-color-block,
 h4.blue.ssp-color-block,
 h5.blue.ssp-color-block,
 h6.blue.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.blue.ssp-color-block:before,
 h2.blue.ssp-color-block:before,
@@ -1191,7 +1191,7 @@ h3.blue.ssp-color-block-background,
 h4.blue.ssp-color-block-background,
 h5.blue.ssp-color-block-background,
 h6.blue.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #0478b5;
 }
 h1.light-grey.ssp-color-block,
@@ -1200,7 +1200,7 @@ h3.light-grey.ssp-color-block,
 h4.light-grey.ssp-color-block,
 h5.light-grey.ssp-color-block,
 h6.light-grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.light-grey.ssp-color-block:before,
 h2.light-grey.ssp-color-block:before,
@@ -1224,7 +1224,7 @@ h3.light-grey.ssp-color-block-background,
 h4.light-grey.ssp-color-block-background,
 h5.light-grey.ssp-color-block-background,
 h6.light-grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #e6e5e9;
 }
 h1.dark-grey.ssp-color-block,
@@ -1233,7 +1233,7 @@ h3.dark-grey.ssp-color-block,
 h4.dark-grey.ssp-color-block,
 h5.dark-grey.ssp-color-block,
 h6.dark-grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.dark-grey.ssp-color-block:before,
 h2.dark-grey.ssp-color-block:before,
@@ -1257,7 +1257,7 @@ h3.dark-grey.ssp-color-block-background,
 h4.dark-grey.ssp-color-block-background,
 h5.dark-grey.ssp-color-block-background,
 h6.dark-grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #444;
 }
 h1 .ssp-icon,
@@ -2055,4 +2055,10 @@ a[data-toggle="tooltip"] {
 }
 .ssp-mar-xxl-bottom {
   margin-bottom: 80px !important;
+}
+.ssp-section .code-container pre {
+  margin: 10px 0;
+}
+.ssp-section .ssp-btn {
+  white-space: nowrap;
 }
