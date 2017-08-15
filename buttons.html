@@ -84,23 +84,56 @@
 
         <div class="row ssp-section">
           <div class="col-sm-12">
-            <h1 class="grey ssp-color-block-background ssp-margin-vertical-xs ssp-padding-vertical-xl">Buttons</h1>
+            <h1 id="buttons" class="blue ssp-color-block">Buttons</h1>
 
-            <hr />
-
-            <h2 id="buttons" class="blue ssp-color-block">Buttons</h2>
+            <hr>
 
             <div class="ssp-main-container row">
               <div class="col-md-4">
                 <a class="ssp-btn">Default Button</a>
               </div>
               <div class="col-md-8">
-                <h6 class="grey ssp-color-block">Default Button</h6>
+                <h6 class="ssp-color-block">Default Button</h6>
                 <p>Default buttons transition to a lighter color on hover. They transition to their original color when exiting hover.</p>
               </div>
               <div class="col-sm-12 code-container">
-                <pre>
+                <button class="code-btn" type="button" data-toggle="collapse" data-target="#default-code-html" aria-expanded="false" aria-controls="#default-code-html">HTML</button>
+                <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#default-code-css" aria-expanded="false" aria-controls="#default-code-css">CSS</button>
+                <div class="code-content collapse in" id="default-code-html">
+                  <pre>
 <em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn</em><em class="attr">"</em><em class="tag">&gt;</em>Default Button<em class="tag">&lt;/a&gt;</em></pre>
+                </div>
+                <div class="code-content collapse" id="default-code-css">
+                  <pre>
+<em class="css-gold">.ssp-main-container .ssp-btn</em> {
+  display: inline-block;
+  margin: <em class="css-gold">15px 0</em>;
+  padding: 13px 60px;
+  width: auto;
+  vertical-align: middle;
+
+  border: 0 solid transparent;
+  border-radius: 0;
+
+  background-image: none;
+  background: #41779c;
+  color: #fff <em class="css-important">!important</em>;
+
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1em;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}</pre>
+                </div>
               </div>
             </div>
 
@@ -111,7 +144,7 @@
                 <a class="ssp-btn ghost-btn">Hero Button</a>
               </div>
               <div class="col-md-8">
-                <h6 class="grey ssp-color-block">Hero Button</h6>
+                <h6 class="ssp-color-block">Hero Button</h6>
                 <p>This button has a transparent background surrounded by a colored border. On hover, it will fill with a specified color.</p>
               </div>
               <div class="col-sm-12 code-container">
@@ -127,7 +160,7 @@
                 <a class="ssp-btn alert-bt">Alert Button</a>
               </div>
               <div class="col-md-8">
-                <h6 class="grey ssp-color-block">Alert Button</h6>
+                <h6 class="ssp-color-block">Alert Button</h6>
                 <p>This button is similar to the default button, but instead transitions to a darker color on hover.</p>
               </div>
               <div class="col-sm-12 code-container">

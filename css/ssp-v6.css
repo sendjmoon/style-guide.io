@@ -481,6 +481,15 @@ pre em.attr {
 pre em.class {
   color: #3fdc89;
 }
+pre em.css-el {
+  color: #e06c75;
+}
+pre em.css-gold {
+  color: #ddb17f;
+}
+pre em.css-important {
+  color: #c678dd;
+}
 pre i {
   background-color: #222;
 }
@@ -2057,7 +2066,19 @@ a[data-toggle="tooltip"] {
   margin-bottom: 80px !important;
 }
 .ssp-section .code-container pre {
-  margin: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ssp-section .code-btn {
+  margin-right: 3px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #263238;
+  color: #fff;
+}
+.ssp-section .code-btn.collapsed {
+  background: #0478b5;
 }
 .ssp-section .ssp-btn {
   white-space: nowrap;
