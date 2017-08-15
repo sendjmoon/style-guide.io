@@ -85,10 +85,16 @@
         <div class="row ssp-section">
           <div class="col-sm-12">
             <h1 id="buttons" class="blue ssp-color-block">Buttons</h1>
+            <ul class="ssp-nav-horizontal">
+                <li><h1>Jump to:</h1></li>
+                <li><a href="#default-button">Default Button</a></li
+                ><li><a href="#hero-button">Hero Button</a></li
+                ><li><a href="#alert-button">Alert Button</a></li>
+            </ul>
 
-            <hr>
+            <hr class="ssp-title-hr">
 
-            <div class="ssp-main-container row">
+            <div class="ssp-main-container row" id="default-button">
               <div class="col-md-4">
                 <a class="ssp-btn">Default Button</a>
               </div>
@@ -97,49 +103,62 @@
                 <p>Default buttons transition to a lighter color on hover. They transition to their original color when exiting hover.</p>
               </div>
               <div class="col-sm-12 code-container">
-                <button class="code-btn" type="button" data-toggle="collapse" data-target="#default-code-html" aria-expanded="false" aria-controls="#default-code-html">HTML</button>
+                <button class="code-btn" type="button" data-toggle="collapse" data-target="#default-code-html" aria-expanded="true" aria-controls="#default-code-html">HTML</button>
                 <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#default-code-css" aria-expanded="false" aria-controls="#default-code-css">CSS</button>
+
                 <div class="code-content collapse in" id="default-code-html">
                   <pre>
-<em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn</em><em class="attr">"</em><em class="tag">&gt;</em>Default Button<em class="tag">&lt;/a&gt;</em></pre>
-                </div>
-                <div class="code-content collapse" id="default-code-css">
+<em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">ssp-main-container</em><em class="attr">"</em><em class="tag">&gt;</em>
+  <em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn</em><em class="attr">"</em><em class="tag">&gt;</em>Default Button<em class="tag">&lt;/a&gt;</em>
+<em class="tag">&lt;/div&gt;</em></pre>
+                </div><!-- /.html code-content -->
+
+                <div class="code-content css collapse" id="default-code-css">
                   <pre>
 <em class="css-gold">.ssp-main-container .ssp-btn</em> {
   display: inline-block;
   margin: <em class="css-gold">15px 0</em>;
-  padding: 13px 60px;
+  padding: <em class="css-gold">13px 60px</em>;
   width: auto;
   vertical-align: middle;
 
-  border: 0 solid transparent;
-  border-radius: 0;
+  border: <em class="css-gold">0</em> solid transparent;
+  border-radius: <em class="css-gold">0</em>;
 
   background-image: none;
-  background: #41779c;
-  color: #fff <em class="css-important">!important</em>;
+  background: <em class="css-gold">#41779c</em>;
+  color: <em class="css-gold">#fff</em> <em class="css-purple">!important</em>;
 
-  font-family: 'proxima_nova_rgbold', sans-serif;
-  font-weight: 400;
   text-align: center;
-  font-size: 1em;
+  font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
+  font-weight: <em class="css-gold">400</em>;
+  font-size: <em class="css-gold">1em</em>;
 
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
 
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -moz-transition: all <em class="css-gold">0.2s</em> ease-in;
+  -o-transition: all <em class="css-gold">0.2s</em> ease-in;
+  -webkit-transition: all <em class="css-gold">0.2s</em> ease-in;
+  transition: all <em class="css-gold">0.2s</em> ease-in;
+}
+
+<em class="css-gold">.ssp-main-container .ssp-btn:hover</em> {
+  background-color: <em class="css-gold">#4ba0c8</em>;
+  text-decoration: none;
+}
+
+<em class="css-gold">.ssp-main-container .ssp-btn:visited</em> {
+  text-decoration: none;
 }</pre>
-                </div>
-              </div>
-            </div>
+                </div><!-- /.css code-content -->
+              </div><!-- /.code-container -->
+            </div><!-- /.ssp-main-container -->
 
             <hr>
 
-            <div class="ssp-main-container row">
+            <div class="ssp-main-container row" id="hero-button">
               <div class="col-md-4">
                 <a class="ssp-btn ghost-btn">Hero Button</a>
               </div>
@@ -148,14 +167,45 @@
                 <p>This button has a transparent background surrounded by a colored border. On hover, it will fill with a specified color.</p>
               </div>
               <div class="col-sm-12 code-container">
-                <pre>
-<em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn ghost-btn</em><em class="attr">"</em><em class="tag">&gt;</em>Hero Button<em class="tag">&lt;/a&gt;</em></pre>
-              </div>
-            </div>
+                <button class="code-btn" type="button" data-toggle="collapse" data-target="#hero-code-html" aria-expanded="true" aria-controls="#hero-code-html">HTML</button>
+                <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#hero-code-css" aria-expanded="false" aria-controls="#hero-code-css">CSS</button>
+                <div class="code-content collapse in" id="hero-code-html">
+                  <pre>
+<em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">ssp-main-container</em><em class="attr">"</em><em class="tag">&gt;</em>
+  <em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn ghost-btn</em><em class="attr">"</em><em class="tag">&gt;</em>Hero Button<em class="tag">&lt;/a&gt;</em>
+<em class="tag">&lt;/div&gt;</em></pre>
+                </div><!-- /.html code-content -->
+
+                <div class="code-content collapse" id="hero-code-css">
+                  <pre>
+<em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn</em> {
+  padding: <em class="css-gold">11px 60px</em>;
+  border: <em class="css-gold">2px</em> solid <em class="css-gold">#41779c</em>;
+  background: transparent;
+  color: <em class="css-gold">#41779c</em> <em class="css-purple">!important</em>;
+}
+<em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn:hover</em> {
+  background-color: <em class="css-gold">#41779c</em>;
+  color: <em class="css-gold">#fff</em> <em class="css-purple">!important</em>;
+}
+<em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn</em> <em class="css-red">p</em> {
+  color: <em class="css-gold">#41779c</em>;
+  margin: <em class="css-gold">0</em>;
+  text-align: center;
+  font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
+  font-weight: <em class="css-gold">400</em>;
+  font-size: <em class="css-gold">1em</em>;
+}
+<em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn:hover</em> <em class="css-red">p</em> {
+  color: <em class="css-gold">#fff</em>;
+}</pre>
+                </div><!-- /.css code-content -->
+              </div><!-- /.code-container -->
+            </div><!-- /.ssp-main-container -->
 
             <hr>
 
-            <div class="ssp-main-container row">
+            <div class="ssp-main-container row" id="alert-button">
               <div class="col-md-4">
                 <a class="ssp-btn alert-bt">Alert Button</a>
               </div>
@@ -164,8 +214,36 @@
                 <p>This button is similar to the default button, but instead transitions to a darker color on hover.</p>
               </div>
               <div class="col-sm-12 code-container">
-                <pre>
-<em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn alert-bt</em><em class="attr">"</em><em class="tag">&gt;</em>Hero Button<em class="tag">&lt;/a&gt;</em></pre>
+                <button class="code-btn" type="button" data-toggle="collapse" data-target="#alert-code-html" aria-expanded="true" aria-controls="#alert-code-html">HTML</button>
+                <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#alert-code-css" aria-expanded="false" aria-controls="#alert-code-css">CSS</button>
+
+                <div class="code-content collapse in" id="alert-code-html">
+                  <pre>
+<em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">ssp-main-container</em><em class="attr">"</em><em class="tag">&gt;</em>
+  <em class="tag">&lt;a</em> <em class="attr">class="</em><em class="class">ssp-btn alert-bt</em><em class="attr">"</em><em class="tag">&gt;</em>Hero Button<em class="tag">&lt;/a&gt;</em>
+<em class="tag">&lt;/div&gt;</em></pre>
+                </div>
+
+                <div class="code-content css collapse" id="alert-code-css">
+                  <pre>
+<em class="css-gold">.ssp-main-container .ssp-btn.alert-bt</em> {
+  padding: <em class="css-gold">11px 60px</em>;
+  border: <em class="css-gold">2px</em> solid <em class="css-gold">#ab4501</em>;
+  background-color: <em class="css-gold">#d44e05</em>;
+  font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
+  font-weight: <em class="css-gold">400</em>;
+}
+<em class="css-gold">.ssp-main-container .ssp-btn.alert-bt:hover</em> {
+  border: 2px solid <em class="css-gold">#b34304</em>;
+  background-color: <em class="css-gold">#b34304</em>;
+  color: <em class="css-gold">#fff</em> <em class="css-purple">!important</em>;
+}
+<em class="css-gold">.ssp-main-container .ssp-btn.alert-bt</em> <em class="css-red">p</em> {
+  font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
+  font-weight: <em class="css-gold">400</em>;
+  font-size: <em class="css-gold">1em</em>;
+}
+                </div>
               </div>
             </div>
           </div>

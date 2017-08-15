@@ -71,7 +71,12 @@ p.ssp-byline {
 }
 
 hr {
-  margin: 40px 0;
+  margin-top: 45px;
+  margin-bottom: 30px;
+
+  &.ssp-title-hr {
+    margin-top: 0px;
+  }
 }
 
 .ssp {
@@ -525,16 +530,24 @@ pre {
       color: #3fdc89;
     }
 
-    &.css-el {
-      color: #e06c75;
+    &.css-red {
+      color: #ea6c57;
     }
 
     &.css-gold {
-      color: #ddb17f;
+      color: #ffba00;
     }
 
-    &.css-important {
-      color: #c678dd;
+    &.css-green {
+      color: #3fdc89;
+    }
+
+    &.css-teal {
+      color: #52c6d3;
+    }
+
+    &.css-purple {
+      color: #d07fe8;
     }
   }
   //em
@@ -799,8 +812,8 @@ a {
 }
 
 hr {
-  margin-top: (@line-height-computed * 2);
-  margin-bottom: (@line-height-computed * 2);
+  // margin-top: (@line-height-computed * 2);
+  // margin-bottom: (@line-height-computed * 2);
   border: 0;
   border-top: 1px solid @ssp-color-light-grey;
   position: relative;
@@ -1266,7 +1279,8 @@ ul {
   //ssp-border
 
   &.ssp-nav-horizontal {
-    background: @ssp-color-light-grey;
+    // background: @ssp-color-light-grey;
+    background: none;
     margin: 0;
     padding: 0;
 
@@ -1284,12 +1298,13 @@ ul {
       a {
         margin: 0;
         padding: @ssp-padding-vertical-base @ssp-padding-horizontal-base;
-        transition: background 500ms;
-        border-bottom: 4px solid rgba(0, 0, 0, 0);
+        // transition: background 500ms;
+        border-top: 4px solid rgba(0, 0, 0, 0);
         color: @ssp-color-link-blue;
 
         &:hover {
-          border-bottom: 4px solid @ssp-color-blue;
+          background: @ssp-color-light-grey;
+          border-top: 4px solid @ssp-color-blue;
           text-decoration: none;
         }
       }
@@ -1765,13 +1780,16 @@ a[data-toggle="tooltip"] {
   .code-container {
 
     pre {
-      margin-top: 0px;
-      margin-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      em {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+      }
     }
   }
 
   .code-btn {
-    margin-right: 3px;
     padding: 10px 20px;
     border: none;
     outline: none;
