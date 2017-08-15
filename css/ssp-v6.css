@@ -122,7 +122,11 @@ p.ssp-byline {
   margin: 10px 0 5px;
 }
 hr {
-  margin: 40px 0;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+hr.ssp-title-hr {
+  margin-top: 0px;
 }
 .ssp-early-learning {
   font-family: "Proxima Nova Thin";
@@ -482,7 +486,7 @@ pre em.class {
   color: #3fdc89;
 }
 pre em.css-red {
-  color: #e06c75;
+  color: #ea6c57;
 }
 pre em.css-gold {
   color: #ffba00;
@@ -721,8 +725,6 @@ pre a.alt {
   border-top-color: #ebe7dc;
 }
 hr {
-  margin-top: 48px;
-  margin-bottom: 48px;
   border: 0;
   border-top: 1px solid #e6e5e9;
   position: relative;
@@ -1423,7 +1425,7 @@ ul.ssp-border li a {
   display: block;
 }
 ul.ssp-nav-horizontal {
-  background: #e6e5e9;
+  background: none;
   margin: 0;
   padding: 0;
 }
@@ -1440,12 +1442,12 @@ ul.ssp-nav-horizontal li h1 {
 ul.ssp-nav-horizontal li a {
   margin: 0;
   padding: 14px 20px;
-  transition: background 500ms;
-  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  border-top: 4px solid rgba(0, 0, 0, 0);
   color: #0077c7;
 }
 ul.ssp-nav-horizontal li a:hover {
-  border-bottom: 4px solid #0478b5;
+  background: #e6e5e9;
+  border-top: 4px solid #0478b5;
   text-decoration: none;
 }
 /*
@@ -2079,7 +2081,6 @@ a[data-toggle="tooltip"] {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .ssp-section .code-btn {
-  margin-right: 3px;
   padding: 10px 20px;
   border: none;
   outline: none;
