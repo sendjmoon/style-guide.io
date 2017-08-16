@@ -30,7 +30,7 @@
     <div class="row top-bar">
       <div class="col-sm-12">
         <div class="row">
-          <img class="col-sm-12 col-md-3" src="imgs/ssp-logo-sel-bpu-cpu.png" />
+          <img class="ssp-logo" src="imgs/ssp-logo-plain.png">
         </div>
       </div>
     </div>
@@ -38,10 +38,16 @@
 
   <div class="container">
     <div class="row">
-      <div id="left-side" class="col-sm-12 col-md-3">
+      <div id="left-side" class="col-md-3">
         <ul class="ssp-nav-list">
           <li>
-            <h1 class="ssp-margin-vertical-none-top"><div class="ssp-icon"><img src="imgs/cube.png" width="20px" /></div>Styles</h1></li>
+            <h1 class="ssp-margin-vertical-none-top">
+              <div class="ssp-icon">
+                <img src="imgs/cube.png" width="20px">
+              </div>
+              Styles
+            </h1>
+          </li>
           <li>
             <a href="index.html">Introduction</a>
           </li>
@@ -63,7 +69,13 @@
         </ul>
         <ul class="ssp-nav-list">
           <li>
-            <h1><div class="ssp-icon"><img src="imgs/page.png" /></div>Samples</h1></li>
+            <h1>
+              <div class="ssp-icon">
+                <img src="imgs/page.png" />
+              </div>
+              Samples
+            </h1>
+          </li>
           <li>
             <a href="../sample-pages/landing-page.html">Landing Page</a>
           </li>
@@ -84,12 +96,12 @@
 
         <div class="row ssp-section">
           <div class="col-sm-12">
-            <h1 id="buttons" class="blue ssp-color-block">Buttons</h1>
+            <h1 class="col-sm-12" id="buttons">Buttons</h1>
             <ul class="ssp-nav-horizontal">
                 <li><h1>Jump to:</h1></li>
-                <li><a href="#default-button">Default Button</a></li
-                ><li><a href="#hero-button">Hero Button</a></li
-                ><li><a href="#alert-button">Alert Button</a></li>
+                <li><a href="#default-button">Default Button</a></li>
+                <li><a href="#hero-button">Hero Button</a></li>
+                <li><a href="#alert-button">Alert Button</a></li>
             </ul>
 
             <hr class="ssp-title-hr">
@@ -100,7 +112,7 @@
               </div>
               <div class="col-md-8">
                 <h6 class="ssp-color-block">Default Button</h6>
-                <p>Default buttons transition to a lighter color on hover. They transition to their original color when exiting hover.</p>
+                <p>Default buttons transition to a lighter color on hover and restore back to their original background when leaving hover.</p>
               </div>
               <div class="col-sm-12 code-container">
                 <button class="code-btn" type="button" data-toggle="collapse" data-target="#default-code-html" aria-expanded="true" aria-controls="#default-code-html">HTML</button>
@@ -165,10 +177,13 @@
               <div class="col-md-8">
                 <h6 class="ssp-color-block">Hero Button</h6>
                 <p>This button has a transparent background surrounded by a colored border. On hover, it will fill with a specified color.</p>
+                <p>The <code>ghost-btn</code> class is to be used in addition to the <code>ssp-btn</code> class. Please review the markup below.</p>
               </div>
+
               <div class="col-sm-12 code-container">
                 <button class="code-btn" type="button" data-toggle="collapse" data-target="#hero-code-html" aria-expanded="true" aria-controls="#hero-code-html">HTML</button>
                 <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#hero-code-css" aria-expanded="false" aria-controls="#hero-code-css">CSS</button>
+
                 <div class="code-content collapse in" id="hero-code-html">
                   <pre>
 <em class="tag">&lt;div</em> <em class="attr">class="</em><em class="class">ssp-main-container</em><em class="attr">"</em><em class="tag">&gt;</em>
@@ -184,10 +199,12 @@
   background: transparent;
   color: <em class="css-gold">#41779c</em> <em class="css-purple">!important</em>;
 }
+
 <em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn:hover</em> {
   background-color: <em class="css-gold">#41779c</em>;
   color: <em class="css-gold">#fff</em> <em class="css-purple">!important</em>;
 }
+
 <em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn</em> <em class="css-red">p</em> {
   color: <em class="css-gold">#41779c</em>;
   margin: <em class="css-gold">0</em>;
@@ -196,6 +213,7 @@
   font-weight: <em class="css-gold">400</em>;
   font-size: <em class="css-gold">1em</em>;
 }
+
 <em class="css-gold">.ssp-main-container .ssp-btn.ghost-btn:hover</em> <em class="css-red">p</em> {
   color: <em class="css-gold">#fff</em>;
 }</pre>
@@ -206,13 +224,16 @@
             <hr>
 
             <div class="ssp-main-container row" id="alert-button">
+
               <div class="col-md-4">
                 <a class="ssp-btn alert-bt">Alert Button</a>
               </div>
               <div class="col-md-8">
                 <h6 class="ssp-color-block">Alert Button</h6>
                 <p>This button is similar to the default button, but instead transitions to a darker color on hover.</p>
+                <p>The <code>alert-bt</code> class is to be used in addition to the <code>ssp-btn</code> class. Please review the markup below.</p>
               </div>
+
               <div class="col-sm-12 code-container">
                 <button class="code-btn" type="button" data-toggle="collapse" data-target="#alert-code-html" aria-expanded="true" aria-controls="#alert-code-html">HTML</button>
                 <button class="code-btn collapsed" type="button" data-toggle="collapse" data-target="#alert-code-css" aria-expanded="false" aria-controls="#alert-code-css">CSS</button>
@@ -233,16 +254,18 @@
   font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
   font-weight: <em class="css-gold">400</em>;
 }
+
 <em class="css-gold">.ssp-main-container .ssp-btn.alert-bt:hover</em> {
   border: 2px solid <em class="css-gold">#b34304</em>;
   background-color: <em class="css-gold">#b34304</em>;
   color: <em class="css-gold">#fff</em> <em class="css-purple">!important</em>;
 }
+
 <em class="css-gold">.ssp-main-container .ssp-btn.alert-bt</em> <em class="css-red">p</em> {
   font-family: <em class="css-green">'proxima_nova_rgbold'</em>, <em class="css-gold">sans-serif</em>;
   font-weight: <em class="css-gold">400</em>;
   font-size: <em class="css-gold">1em</em>;
-}
+}</pre>
                 </div>
               </div>
             </div>
