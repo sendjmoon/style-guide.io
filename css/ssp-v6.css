@@ -122,7 +122,11 @@ p.ssp-byline {
   margin: 10px 0 5px;
 }
 hr {
-  margin: 40px 0;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+hr.ssp-title-hr {
+  margin-top: 0px;
 }
 .ssp-early-learning {
   font-family: "Proxima Nova Thin";
@@ -481,6 +485,21 @@ pre em.attr {
 pre em.class {
   color: #3fdc89;
 }
+pre em.css-red {
+  color: #ea6c57;
+}
+pre em.css-gold {
+  color: #ffba00;
+}
+pre em.css-green {
+  color: #3fdc89;
+}
+pre em.css-teal {
+  color: #52c6d3;
+}
+pre em.css-purple {
+  color: #d07fe8;
+}
 pre i {
   background-color: #222;
 }
@@ -668,8 +687,6 @@ a.current:hover {
 a.current:before {
   content: '\00a0';
   width: 0.25em;
-  height: 35px;
-  margin-top: 0.3em;
   margin-right: 0.25em;
   display: block;
   float: left;
@@ -706,8 +723,6 @@ pre a.alt {
   border-top-color: #ebe7dc;
 }
 hr {
-  margin-top: 48px;
-  margin-bottom: 48px;
   border: 0;
   border-top: 1px solid #e6e5e9;
   position: relative;
@@ -1002,7 +1017,7 @@ h3.tan.ssp-color-block,
 h4.tan.ssp-color-block,
 h5.tan.ssp-color-block,
 h6.tan.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.tan.ssp-color-block:before,
 h2.tan.ssp-color-block:before,
@@ -1026,7 +1041,7 @@ h3.tan.ssp-color-block-background,
 h4.tan.ssp-color-block-background,
 h5.tan.ssp-color-block-background,
 h6.tan.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #ebe7dc;
 }
 h1.grey.ssp-color-block,
@@ -1035,7 +1050,7 @@ h3.grey.ssp-color-block,
 h4.grey.ssp-color-block,
 h5.grey.ssp-color-block,
 h6.grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.grey.ssp-color-block:before,
 h2.grey.ssp-color-block:before,
@@ -1059,7 +1074,7 @@ h3.grey.ssp-color-block-background,
 h4.grey.ssp-color-block-background,
 h5.grey.ssp-color-block-background,
 h6.grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #e6e5e9;
 }
 h1.blue.ssp-color-block,
@@ -1068,7 +1083,7 @@ h3.blue.ssp-color-block,
 h4.blue.ssp-color-block,
 h5.blue.ssp-color-block,
 h6.blue.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.blue.ssp-color-block:before,
 h2.blue.ssp-color-block:before,
@@ -1092,7 +1107,7 @@ h3.blue.ssp-color-block-background,
 h4.blue.ssp-color-block-background,
 h5.blue.ssp-color-block-background,
 h6.blue.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #0478b5;
 }
 h1.red.ssp-color-block,
@@ -1101,7 +1116,7 @@ h3.red.ssp-color-block,
 h4.red.ssp-color-block,
 h5.red.ssp-color-block,
 h6.red.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.red.ssp-color-block:before,
 h2.red.ssp-color-block:before,
@@ -1125,7 +1140,7 @@ h3.red.ssp-color-block-background,
 h4.red.ssp-color-block-background,
 h5.red.ssp-color-block-background,
 h6.red.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #F84139;
 }
 h1.green.ssp-color-block,
@@ -1134,7 +1149,7 @@ h3.green.ssp-color-block,
 h4.green.ssp-color-block,
 h5.green.ssp-color-block,
 h6.green.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.green.ssp-color-block:before,
 h2.green.ssp-color-block:before,
@@ -1158,7 +1173,7 @@ h3.green.ssp-color-block-background,
 h4.green.ssp-color-block-background,
 h5.green.ssp-color-block-background,
 h6.green.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #33a86a;
 }
 h1.blue.ssp-color-block,
@@ -1167,7 +1182,7 @@ h3.blue.ssp-color-block,
 h4.blue.ssp-color-block,
 h5.blue.ssp-color-block,
 h6.blue.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.blue.ssp-color-block:before,
 h2.blue.ssp-color-block:before,
@@ -1191,7 +1206,7 @@ h3.blue.ssp-color-block-background,
 h4.blue.ssp-color-block-background,
 h5.blue.ssp-color-block-background,
 h6.blue.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #0478b5;
 }
 h1.light-grey.ssp-color-block,
@@ -1200,7 +1215,7 @@ h3.light-grey.ssp-color-block,
 h4.light-grey.ssp-color-block,
 h5.light-grey.ssp-color-block,
 h6.light-grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.light-grey.ssp-color-block:before,
 h2.light-grey.ssp-color-block:before,
@@ -1224,7 +1239,7 @@ h3.light-grey.ssp-color-block-background,
 h4.light-grey.ssp-color-block-background,
 h5.light-grey.ssp-color-block-background,
 h6.light-grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #e6e5e9;
 }
 h1.dark-grey.ssp-color-block,
@@ -1233,7 +1248,7 @@ h3.dark-grey.ssp-color-block,
 h4.dark-grey.ssp-color-block,
 h5.dark-grey.ssp-color-block,
 h6.dark-grey.ssp-color-block {
-  padding-left: 0.5em;
+  padding-left: 15px;
 }
 h1.dark-grey.ssp-color-block:before,
 h2.dark-grey.ssp-color-block:before,
@@ -1257,7 +1272,7 @@ h3.dark-grey.ssp-color-block-background,
 h4.dark-grey.ssp-color-block-background,
 h5.dark-grey.ssp-color-block-background,
 h6.dark-grey.ssp-color-block-background {
-  padding: 14px 20px;
+  padding: 15px;
   background: #444;
 }
 h1 .ssp-icon,
@@ -1362,9 +1377,10 @@ ul li {
   line-height: 1.25em;
 }
 ul li a {
-  font-size: 16px;
+  display: inline-block;
   padding: 0.5em 0;
-  display: block;
+  font-size: 16px;
+  line-height: 24px;
 }
 ul li a label {
   font-size: 16px;
@@ -1408,7 +1424,7 @@ ul.ssp-border li a {
   display: block;
 }
 ul.ssp-nav-horizontal {
-  background: #e6e5e9;
+  background: none;
   margin: 0;
   padding: 0;
 }
@@ -1420,17 +1436,17 @@ ul.ssp-nav-horizontal li h1 {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  padding: 14px 10px 14px 20px;
+  padding: 15px;
 }
 ul.ssp-nav-horizontal li a {
   margin: 0;
-  padding: 14px 20px;
-  transition: background 500ms;
-  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  padding: 15px;
+  border-top: 4px solid rgba(0, 0, 0, 0);
   color: #0077c7;
 }
 ul.ssp-nav-horizontal li a:hover {
-  border-bottom: 4px solid #0478b5;
+  background: #e6e5e9;
+  border-top: 4px solid #0478b5;
   text-decoration: none;
 }
 /*
@@ -2055,4 +2071,24 @@ a[data-toggle="tooltip"] {
 }
 .ssp-mar-xxl-bottom {
   margin-bottom: 80px !important;
+}
+.ssp-section .code-container pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ssp-section .code-container pre em {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.ssp-section .code-btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #263238;
+  color: #fff;
+}
+.ssp-section .code-btn.collapsed {
+  background: #0478b5;
+}
+.ssp-section .ssp-btn {
+  white-space: nowrap;
 }
